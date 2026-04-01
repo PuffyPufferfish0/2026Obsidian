@@ -11,10 +11,14 @@
             "id": "fc282b20d0258b4c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "dictEXAMII/System Discovery.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "System Discovery"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "(2)   CEG 2350 - OS Concepts Documentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for (2)   CEG 2350 - OS Concepts Documentation"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "(2)   CEG 2350 - OS Concepts Documentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from (2)   CEG 2350 - OS Concepts Documentation"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "(2)   CEG 2350 - OS Concepts Documentation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of (2)   CEG 2350 - OS Concepts Documentation"
             }
           }
         ]
@@ -178,16 +185,23 @@
   },
   "active": "fc282b20d0258b4c",
   "lastOpenFiles": [
+    "(2)   CEG 2350 - OS Concepts Documentation.md",
+    "pictures/Pasted image 20260401131458.png",
+    "pictures/Pasted image 20260401131140.png",
+    "dictEXAMII/System Discovery.md",
+    "pictures",
+    "pictures/Pasted image 20260401130954.png",
+    "dictEXAMII/Process Management & Control.md",
+    "dictEXAMII/df.md",
+    "dictEXAMI/octals.md",
+    "dictEXAMII/Additional System Operations.md",
     "dictEXAMII/tmux documentation.md",
     "dictEXAMII/tmux.md",
     "dictEXAMII/ssh_config.md",
     "dictEXAMII/Flags Dictionary.md",
-    "(2)   CEG 2350 - OS Concepts Documentation.md",
     "archive/(1)   CEG_2350_OS_Concepts_Documentation.md",
     "archive",
-    "dictEXAMII/Process Management & Control.md",
     "dictEXAMII/Process Management.md",
-    "dictEXAMII/Additional System Operations.md",
     "dictEXAMII/alias.md",
     "dictEXAMII/Bash Aliases.md",
     "dictEXAMII/Color Output.md",
@@ -199,12 +213,8 @@
     "dictEXAMII/sudo vs su.md",
     "dictEXAMII/System Services and Kernel.md",
     "dictEXAMII/xargs.md",
-    "dictEXAMII/System Discovery.md",
-    "dictEXAMII/df.md",
     "dictEXAMII/history.md",
-    "dictEXAMI/octals.md",
     "dictEXAMI/Git.md",
-    "dictEXAMI/SSH.md",
     "dictEXAMII",
     "dictEXAMI"
   ]

@@ -1,8 +1,5 @@
 
-
 > [!info] This is a comprehensive dictionary I made from Labs 01-09 and Midterm 2 Review materials. It covers everything from Command Line Navigation to Process Management and System Discovery.
-
-
 
 ## 1. [[Command Line Navigation]]
 
@@ -27,7 +24,7 @@ Basic file and directory manipulation commands in Linux.
 - **[[rm]]**: Removes a file.
     
 - **[[vim]]**: Opens a CLI text editor directly into the terminal.
-    
+	![[Pasted image 20260401131458.png|522]]
 
 ## 2. [[File Permissions]], Users, and Groups
 
@@ -73,7 +70,7 @@ Automating tasks using scripts.
 - **[[getopts]]**: Parsing command-line flags (like `-s` or `-a`) into your scripts.
     
 - **[[Bash Aliases]]**: Using `.bash_aliases` to create custom command shortcuts.
-    
+    ![[Pasted image 20260401131140.png|541]]
 
 ## 6. [[Text Processing]] (grep, sed, awk)
 
@@ -114,7 +111,9 @@ Essential commands for managing your environment, finding things, and hardware d
 - **[[System Discovery]]**: Commands like `lscpu`, `free`, and `lspci` to check hardware specs.
     
 - **[[shred]]**: Securely deleting files so they cannot be recovered by forensic tools like `strings`.
-    
+![[Pasted image 20260401130954.png|473]]
+
+
 
 ## 9. [[Process Management & Control]] & Service Management
 
@@ -128,4 +127,4 @@ Managing active programs (RAM) and background daemons.
     
 - **Terminal Multiplexers ([[tmux]])**: Running "pseudo-terminals" to detach and attach background sessions.
     
-- **Kernel & Services**: The Kernel manages hardware/resources. `init`/`systemd` (PID 1) starts everything else. Managed using `systemctl` (start, stop, enable, reload).
+- **Kernel & Services**: The device's Kernel manages hardware/resources. `init`/`systemd` (PID 1) starts everything else. Managed using `systemctl` (start, stop, enable, reload).
