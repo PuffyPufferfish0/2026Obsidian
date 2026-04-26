@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "81ad00cf2ed41c90",
+        "id": "d967e51a4f1aa920",
         "type": "tabs",
         "children": [
           {
-            "id": "fc282b20d0258b4c",
+            "id": "b2e0421702a5b758",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dictEXAMII/System Discovery.md",
+                "file": "(2)   CEG 2350 - OS Concepts Documentation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "System Discovery"
+              "title": "(2)   CEG 2350 - OS Concepts Documentation"
             }
           }
         ]
@@ -183,39 +183,51 @@
       "bases:Create new base": false
     }
   },
-  "active": "fc282b20d0258b4c",
+  "active": "144f0760ff89b8b7",
   "lastOpenFiles": [
+    "dictEXAMIII/Web Servers.md",
+    "dictEXAMIII/gitignore.md",
+    "dictEXAMIII/Compilers.md",
     "(2)   CEG 2350 - OS Concepts Documentation.md",
+    "OtherResources/ExamIII/PRACTICE_EXAMIII.md",
+    "README.md",
+    "dictEXAMIII/Networking Commands.md",
+    "OtherResources/ExamIII",
+    "OtherResources/ExamII/Practice Exam Answers (ExamII).md",
+    "OtherResources/ExamII",
+    "dictEXAMIII/sftp.md",
+    "dictEXAMIII/Makefiles.md",
+    "dictEXAMIII/make.md",
+    "dictEXAMIII/git merge.md",
+    "dictEXAMIII/git switch.md",
+    "dictEXAMIII/git branch.md",
+    "dictEXAMIII/Git Branching.md",
+    "dictEXAMIII/git checkout.md",
+    "dictEXAMIII/tar.md",
+    "dictEXAMIII",
     "pictures/Pasted image 20260401131458.png",
-    "pictures/Pasted image 20260401131140.png",
-    "dictEXAMII/System Discovery.md",
-    "pictures",
-    "pictures/Pasted image 20260401130954.png",
-    "dictEXAMII/Process Management & Control.md",
-    "dictEXAMII/df.md",
-    "dictEXAMI/octals.md",
-    "dictEXAMII/Additional System Operations.md",
-    "dictEXAMII/tmux documentation.md",
-    "dictEXAMII/tmux.md",
-    "dictEXAMII/ssh_config.md",
-    "dictEXAMII/Flags Dictionary.md",
     "archive/(1)   CEG_2350_OS_Concepts_Documentation.md",
-    "archive",
-    "dictEXAMII/Process Management.md",
-    "dictEXAMII/alias.md",
+    "OtherResources",
+    "Source/quiz10_files/a.html",
+    "Source/quiz10.html",
+    "Source/quiz10_files/gtm.js",
+    "Source/quiz10_files/question_collection.css",
+    "Source/quiz10_files/QuestionCollection.Main.radioChecked.svg",
+    "Source/quiz10_files/lockdownbrowser.css",
+    "Source/quiz10_files/D2L.LP.Web.Core.css",
+    "Source/quiz10_files/QuestionCollection.Main.radioUnchecked.svg",
+    "Source/quiz9_files/QuestionCollection.Main.radioChecked.svg",
+    "Source/quiz9_files/QuestionCollection.Main.radioUnchecked.svg",
+    "Source/Lab 12 - Networking & Firewalls _ CEG 2350_files/Default-SGRules.JPG",
+    "OtherResources/ExamII/Quizzes 6-8.md",
+    "dictEXAMII/Process Management & Control.md",
+    "dictEXAMII/ssh_config.md",
+    "dictEXAMI/grep.md",
+    "dictEXAMI/sed.md",
+    "dictEXAMI/SSH.md",
+    "dictEXAMI/Text Processing.md",
     "dictEXAMII/Bash Aliases.md",
-    "dictEXAMII/Color Output.md",
-    "dictEXAMII/find.md",
-    "dictEXAMII/getopts.md",
-    "dictEXAMII/Shells.md",
-    "dictEXAMII/shred.md",
-    "dictEXAMII/Standard Streams and Redirection.md",
-    "dictEXAMII/sudo vs su.md",
-    "dictEXAMII/System Services and Kernel.md",
-    "dictEXAMII/xargs.md",
-    "dictEXAMII/history.md",
-    "dictEXAMI/Git.md",
-    "dictEXAMII",
-    "dictEXAMI"
+    "pictures/Pasted image 20260401131140.png",
+    "pictures/Pasted image 20260401130954.png"
   ]
 }

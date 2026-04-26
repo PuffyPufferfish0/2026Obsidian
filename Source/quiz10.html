@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html data-userprofile-context="{&quot;hasProfileCardAccess&quot;:true}" data-mathjax-context="{&quot;renderLatex&quot;:false,&quot;outputScale&quot;:1.5}" data-logging-endpoint="/d2l/lp/logger/provision?sessionToken=NjYwNSwzODE0MDQ" lang="en-us" data-lang-default="en-us" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[0]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;M/d/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-oslo="{&quot;batch&quot;:&quot;/d2l/api/oslo/1/batch&quot;,&quot;collection&quot;:&quot;/d2l/api/oslo/1/collection&quot;,&quot;version&quot;:&quot;W/\&quot;20.26.4.23339.639014925149991897\&quot;&quot;}" data-timezone="{&quot;name&quot;:&quot;United States - New York&quot;,&quot;identifier&quot;:&quot;America/New_York&quot;}" data-terminology="{&quot;outcomes&quot;:&quot;standards&quot;,&quot;educator&quot;:&quot;teacher&quot;,&quot;moduleHierarchy&quot;:&quot;unit&quot;}" data-app-version="20.26.4" dir="ltr" data-telemetry-endpoint="https://prd.us-east-1.telemetryservice.brightspace.com/api/events/" data-cdn="https://s.brightspace.com/apps/brightspace/20.26.4.23339/" data-global-context="{&quot;orgUnitId&quot;:&quot;762262&quot;,&quot;orgId&quot;:&quot;6605&quot;,&quot;userId&quot;:&quot;381404&quot;}" data-he-context="{&quot;activeOrgEnrollment&quot;:true,&quot;applySandboxing&quot;:false,&quot;bcsansFontAllowed&quot;:false,&quot;contentStyler&quot;:false,&quot;contentStylerCssOverride&quot;:&quot;&quot;,&quot;disablePointerEvents&quot;:true,&quot;enableLmsPathChecking&quot;:false,&quot;generativeAIEndpoint&quot;:&quot;&quot;,&quot;h5pContext&quot;:null,&quot;h5pLtiDeploymentLinkId&quot;:null,&quot;insertElement&quot;:false,&quot;insertPractice&quot;:false,&quot;layouts&quot;:false,&quot;mathRenderScale&quot;:1.5,&quot;maxFileSize&quot;:2147483648,&quot;mentions&quot;:false,&quot;orgUnitId&quot;:&quot;762262&quot;,&quot;orgUnitPath&quot;:&quot;/content/202430-202480/762262-202630CEG-2350-01/&quot;,&quot;pasteFormatting&quot;:&quot;merge&quot;,&quot;sourceEditable&quot;:true,&quot;uploadFiles&quot;:false,&quot;useNewTinyMCEVersion&quot;:false,&quot;viewFiles&quot;:false,&quot;wmodeOpaque&quot;:true}" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#4b4b4c&quot;}" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen">*:not(pre, pre *, code, [aria-hidden="true"], [class*="fa-"], .fa, .fab, .fad, .fal, .far, .fas, .fass, .fasr, .fat, .icofont, [style*="font-"], [class*="icon"], [class*="Icon"], [class*="symbol"], [class*="Symbol"], .glyphicon, [class*="material-symbol"], [class*="material-icon"], mu, [class*="mu-"], .typcn, [class*="vjs-"]) {
+  -webkit-text-stroke: 0.4px !important;
+  text-stroke: 0.4px !important;
+}</style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container, div.mc-ip-hide[style*="background: rgb(255, 255, 255) !important"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jack Anderson - Spring 2026 Operating System Concepts and Usage
+  (CEG-2350-01) - Pilot - Wright State's Learning Management System</title>
+		<link rel="preconnect" href="https://s.brightspace.com/lib/bsi/2026.4.226/" crossorigin="">
+		<link rel="dns-prefetch" href="https://s.brightspace.com/lib/bsi/2026.4.226/">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.4.226/unbundled/bsi-unbundled.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.4.226/unbundled/button-icon.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.4.226/unbundled/html-block.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2026.4.226/unbundled/navigation-band.js" as="script" crossorigin="anonymous">
+		<script async="" src="quiz10_files/gtm.js"></script><script>
+		(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (!data.message) return;if (data.error && data.error.stack && (data.error.stack.includes('/content/') || data.error.stack.includes('/shared/'))) return;if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WG74PFK');
+		(function(){try { localStorage.setItem('XSRF.Token','5PYsKCY0oX5gDVB4D6Eu9P6GInrIyfLb');localStorage.setItem('Session.UserId','381404');} catch(e) {}})();
+		(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.6.1/assets/Lato-' + w + '.woff2) format("woff2")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();
+		(function(){
+				D2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
+				D2L.LP.Web.UI.Flags = {
+					ListedFlags: {"ACC-4-alternate-formats":false,"ACC-5-dashboard":false,"award-enable-copy-workflow":false,"awards-increase-string-fields-length":true,"LURV-6105-update-public-awards-fields":true,"awards-summary-date-localization-fix":true,"create-space-experimental-brightspace-object-types":false,"MAV-5508-welcome-widget-create-new":true,"ipsis-sourcesystem-migration":true,"ipsis-provider-oldstandardcsv":false,"ipsis-oneroster-csv-powerschool":false,"ipsis-oneroster-full-sync-implicit-unenrollments":false,"ipsis-esb-lis":false,"hyrl-611-ilp-user-sourcedid-update":false,"f17778-oneroster-psur":false,"f19471-gg4l-oneroster-grades-passback":true,"hyrl-1999-oneroster-rest-1p2":false,"hyrl-2561-ipsis-lms-invoke-aws-lambdas":true,"hyrl-2962-cancel-batch":false,"hyrl-3638-user-default-inactive-option":true,"hyrl-3587-hylia-data-pond":false,"F16988-add-to-calendar":true,"advanced-assessments-groups":true,"PHNX-2361-lti-activity-usage":false,"nim-3228-ce-multi-eval-tab-skeleton-fix":true,"nim-5386-modify-activity-display-return-to":true,"nim-5487-fix-assigned-actor-counts":true,"nim-5395-update-org-unit-id-on-activity-iteration":true,"nim-5243-consolidate-evaluator-and-publisher-patch-actions":true,"nim-5229-add-targeted-class-to-explicit-evaluation-subentities":true,"PHNX-3264-unavailable-content-visibility-setting":true,"F18735-lti-special-access-ui-feature-flag":false,"F19162-enable-content-face-releaseconditions":true,"F21912-enable-content-face-competencies":true,"F19163-enable-content-face-standards":true,"IDCS-15-edit-content-file-descriptions":true,"PHNX-1554-enable-refactored-completion-summary":true,"PHNX-2629-access-unlimited-depth":true,"IDCS-283-edit-lti-descriptions":true,"EP-1169-use-content-search":true,"EP-1097-edit-scorm-descriptions":true,"EP-1432-enable-description-scrolling-hovering":true,"EP-1580-enable-url-updating-in-lessons-next-prev":true,"PHNX-2357-user-guided-grade-associations":true,"PHNX-2649-lessons-course-overview":true,"PHNX-3198-respect-availability-window":true,"PHNX-3065-lessons-quicklink-current-window-navigation":true,"PHNX-2766-lazy-load-content":true,"PHNX-2988-lessons-full-date-tooltip-and-aria":true,"PHNX-3063-support-availability-types":true,"PHNX-4040-improved-file-topic-uploader":false,"PHNX-3190-valence-get-user-topic-completions-ignores-classlist-presence":true,"EP-1454-enable-module-level-outcome-alignment":false,"MAV-5811-practice-subpath-course-import":true,"usa-1243-discussions-due-date":true,"lti-asset-processor-groups":false,"FED-3067-Annual-Consumption":true,"cpd-add-record-from-award":true,"cpd-utc-dates":true,"cpd-default-attachments":true,"cpd-save-targets-dialog":true,"LURV-6016-CPD-Submission-Alert":true,"nim-3661-new-alerts-on-incorrect-file-extenstion-assignment-submission":true,"fed-54-in-progress":false,"FED-4668-lift-outcomes":true,"FED-4649-content-gen-import-expand":true,"FED-4285-content-templates":true,"LUMI-275-full-screen":false,"LUMI-276-split-view":false,"HAI-1593-content-picker-quiz":true,"HAI-1591-content-picker-ideas":true,"HAI-1592-content-picker-summary":true,"HAI-1821-content-picker-lss":true,"HAI-596-Interventions":true,"HAI-2303-lcg-bulk-template":true,"FED-6732-quiz-custom-instructions":true,"FED-6876-idea-custom-instructions":true,"rpc-recalculate-all-users-fix":true,"oad-include-asn":true,"EP-1443-enable-lightcast-skills":false,"rename-programs-to-outcome-sets":true,"outcome-sets-organization":true,"outcomes-set-course-dataset":true,"outcomes-set-org-dataset":true,"EP-1420-enable-createspace-picker":false,"outcome-sets-scales":false,"de44716-lti-iframe-resize-limit":false,"lti-apps":false,"uce-eula-dialog":true,"BORG-4318-hide-quiz-question-points":true,"BORG-5230-zero-point-questions":true,"BORG-6211-jobify-survey-export":true,"BORG-5429-Hotspot-Question-Type":false,"BORG-3975-quizzing-h5p-improvements":false,"BORG-6738-shared-question-components":false,"BORG-5624-question-pools-validate-numquestions":true,"BORG-5894-Incorrect-Filter-and-Feedback-Field-Update":true,"EP-1126-edit-lor-descriptions":true,"FED-2493-Docs-PDF":true,"HAI-2170-study-notebook":false,"shield-14201-update-prismjs-1-30":true,"MAV-5203-createspace-h5p-library":false,"GAUD-9398-make-backdrop-inert":false,"GAUD-7355-tooltip-popover":true,"GAUD-9530-exclude-sticky-columns-from-scroll-calculations":true,"GAUD-7146-tabs-new-structure":true,"GAUD-8351-dialog-resize-telemetry":true,"PHNX-3234-dialog-alignment-fix":true,"legacy-fullscreen-dialog-handle-fix":true,"AUT-3935-Grades-Formula-Dialog-Fix":true,"GAUD-8697-card-badge-center-flag":true,"lurv-6209-user-merge":true,"rubrics-clear-selections-option-and-menu-improvements":true,"unique-reoffer-code":true,"AUT-3866-Courses-Load-More":true,"MAV-5177-source-courses-in-createspace":false,"MAV-4591-welcome-window-no-context-override":false,"MAV-5258-mpw-profile-dropdown":true,"MAV-5974-hwep-delete-config-button":false,"coi-discover-improvements":false,"shield-4811-enter-grades-scrolling-fix":false,"PHNX-4309-iframe-modal-dialog-zindex-fix":true,"workforce-learning-groups":false,"scheduled-learning":false},
+					Flag: function(feature, defaultValue) {
+						const featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];
+						return featureValue !== undefined ? featureValue : defaultValue;
+					}
+				};
+			})();
+		</script>
+		<link rel="icon" href="https://pilot.wright.edu/d2l/lp/web/faviconView?variant=0&amp;version=1">
+		<link rel="stylesheet" type="text/css" href="quiz10_files/bsi.css"><style class="darkreader darkreader--sync" media="screen"></style>
+		<link rel="stylesheet" type="text/css" href="quiz10_files/D2L.LP.Web.Core.css"><style class="darkreader darkreader--sync" media="screen"></style>
+		<link rel="stylesheet" type="text/css" href="quiz10_files/D2L.LP.Web.Controls.FieldSet.css"><style class="darkreader darkreader--sync" media="screen"></style>
+		<style>
+			html { font-size:20px; }
+			html { --d2l-branding-primary-color: #4b4b4c; }
+		</style><style class="darkreader darkreader--sync" media="screen"></style>
+		<link rel="stylesheet" type="text/css" href="quiz10_files/score_display_control.css"><style class="darkreader darkreader--sync" media="screen"></style>
+		<link rel="stylesheet" type="text/css" href="quiz10_files/question_collection.css"><style class="darkreader darkreader--sync" media="screen"></style>
+		<link rel="stylesheet" type="text/css" href="quiz10_files/quiz_submissions_attempt.css"><style class="darkreader darkreader--sync" media="screen"></style>
+		<link rel="stylesheet" type="text/css" href="quiz10_files/lockdownbrowser.css"><style class="darkreader darkreader--sync" media="screen"></style>
+		<style>
+			.cDark { background-color:#65696e;}
+			.cDark a, .cDark a:link, .cDark a:visited, .cDark a:hover {color:#ffffff;font-weight:normal;}
+			.cLight { background-color:#f39120;}
+			.cLight a, .cLight a:link, .cLight a:visited, .cLight a:hover {color:#ffffff;font-weight:normal;}
+			.cSoft { background-color:#e7e7e2;}
+			.cSoft a, .cSoft a:link, .cSoft a:visited, .cSoft a:hover {color:#666666;font-weight:normal;}
+			.d2l_1_1_212 {width:500px;}
+			.d2l_1_2_610 {background-position:left top;}
+			.d2l_1_3_425 {padding:1em;}
+			.d2l_1_4_508 {background-image:url('https://s.brightspace.com/lib/bsi/2026.4.226/images/tier1/alert.svg');}
+			.d2l_1_5_528 {background-position:right top;}
+			.d2l_1_6_995 {padding-right:31px;}
+			.d2l_1_7_55 {min-height:18px;}
+			.d2l_1_8_146 {background-image:url('https://s.brightspace.com/lib/bsi/2026.4.226/images/tier1/check.svg');}
+			.d2l_1_9_263 {padding:3.4em;}
+		</style><style class="darkreader darkreader--sync" media="screen"></style>
+		<script>
+			var Global = {OrgUnitId:762262,OrgId:6605,OrgName:'Pilot - Wright State\u0027s Learning Management System',OrgUnitName:'Spring 2026 Operating System Concepts and Usage  (CEG-2350-01)',OrgUnitCode:'202630 CEG-2350-01',OrgUnitTypeId:3,OrgDefinedId:'U01112838',OrgUnitPath:'\/content\/202430-202480\/762262-202630CEG-2350-01\/',FirstName:'Jack',LastName:'Anderson',UserName:'w073jaa',UserId:381404,RoleId:102,RoleCode:'01',ImageSetId:0,ImageVersion:'20.26.4.23339',AssemblyVersion:'20.26.4.23339',Language:{LanguageId:1,LanguageVersion:'20.26.4.23339'},Culture:{IsRightToLeft:0},};
+			var BrowserInfo = {browserType:'Firefox',Type:6,MajorVersion:147,MinorVersion:0};
+		</script><meta name="darkreader" content="a35e7a94b36242be97e993820804d99d"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select {
+    --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+.d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+    background: var(--darkreader-bg--d2l-color-mica) !important;
+}
+.d2l-le-TreeAccordionItem-anchor::before {
+    background: var(--darkreader-bg--d2l-color-corundum) !important;
+}
+table[class|="moz-header"] {
+    background: none;
+}
+*[style*="color: rgba(0,0,0,"],
+*[style*="color: rgba(0, 0, 0,"],
+*[style*="color:#000"],
+*[style*="color:black"],
+*[style*="color:#282828"],
+*[style*="color:#444"] {
+    color: var(--darkreader-neutral-text) !important;
+}
+*[style*="background:#fff"],
+*[style*="background-color:#fff"] {
+    background: var(--darkreader-neutral-background) !important;
+}
+*[bgcolor="#F5F5F5"],
+*[style*="background-color: #F5F5F5"] {
+    background: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+body[style*="background: rgb(255, 255, 255) !important"] *:not(a),
+.body[style*="background-color: rgb(254, 254, 254) !important"] *:not(a) {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+div[style*="www.gstatic.com/android/"] {
+    background: none !important;
+}
+*[style*="background:#f9f9f9"] {
+    background: var(--darkreader-background-f9f9f9, #1b1e1f) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style>
+		<script src="quiz10_files/js"></script>
+		<script>
+		
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push( arguments ); }
+gtag('js', new Date());
+gtag('config', 'G-5JWSMY8T5G');
+		</script>
+		<script src="quiz10_files/jquery.min.js"></script>
+		<script src="quiz10_files/jquery-ui.min.js"></script>
+		<script src="quiz10_files/bsi.js"></script>
+		<script>
+		window.__elasticRumOnload = function() {if (!window['elasticApm']) return;var apm = elasticApm.init({serviceName: 'LMS',serverUrl: 'https://d2l-elasticrum.apm.us-east-1.aws.cloud.es.io/',transactionSampleRate: 0.1,disableInstrumentations: ['xmlhttprequest','fetch','eventtarget','history']});apm.addLabels({ "orgName": "wsu"});apm.addLabels({ "instanceName": "wrightstate"});};
+		</script>
+		<script async="async" onload="window.__elasticRumOnload()" src="quiz10_files/elastic-apm-rum.umd.min.js"></script>
+		<script src="quiz10_files/D2L.LP.Web.Core.js"></script>
+		<script src="quiz10_files/score_display_control.js"></script>
+		<script src="quiz10_files/feedback_balloon_display.js"></script>
+		<script src="quiz10_files/option_block_question_selection.js"></script>
+		<script>
+			D2L.Serialization.JsonDeserializerMin.Deserialize(["f9601958368b4b7db0403c65d54dc742",535,0,[{"57d9a85797a64ec28b5a173eb8ebc585":[["dg_score"],[[2,"z_s"],[1,"z_t"],[2,"z_u"]]],"dc820be3f6bc424c81b9b5f2053b755c":[["dg_separator"],[[2,"z_v"]]],"4b4a4482f21a4a89a5a08c55fe7e3378":[["dg_symbol"],[[2,"z_w"]]],"31bd0c6853ad4c58b7f69b512ba6945b":[["dg_colour"],[[2,"z_r"]]],"910262c2368f43419aef27efcf34c50c":[["dg_score","ctl_3"],[[2,"z_be"],[1,"z_bf"],[2,"z_bg"]]],"28b972aebc494193a30dfefcc68b59a3":[["dg_separator","ctl_4"],[[2,"z_bh"]]],"5c2423ab098c4b7c97cfca41a59bcc2f":[["dg_symbol","ctl_5"],[[2,"z_bi"]]],"1e0fe66386b34649af5ac2a7faa6dfb4":[["dg_colour","ctl_6"],[[2,"z_bd"]]]}],[[]],[[]],[[],0],["^([\\(-]*(([01234567890123456789]+))(\\.[01234567890123456789]+)?[\\)-]*)$|^([\\(-]*[01234567890123456789]*\\.?[01234567890123456789]+[\\)-]*)$","^([\\(-]*(([01234567890123456789]+))[\\)-]*)$|^([\\(-]*[01234567890123456789]+[\\)-]*)$",0,".",1,"-",",",["0","1","2","3","4","5","6","7","8","9"],"%",0,0,0,[0]],[],0,{"ClassName":"D2L.Util.DateTime","Year":2026,"Month":4,"Day":26,"Hour":15,"Minute":42,"Second":37,"Millisecond":43}],D2L.UI);
+			D2L.Language.InitLang({'standard.buttons':{'btnadd':'Add','btnreset':'Reset','btnreplace':'Replace','btnrename':'Rename','btnremoveselected':'Remove Selected','btnremove':'Remove','btnrefresh':'Refresh','btnrecord':'Record','btnpublishprocessing':'Publishing...','btnpublish1':'Publish','btnpublish':'Publish to LOR','btnproceed':'Proceed','btnprint':'Print','btnprevious':'Previous ','btnpreview':'Preview','btnoverwrite':'Overwrite','btnokay':'OK','btnok':'OK','btnresetprocessing':'Resetting...','btnretract':'Retract','btnreturn':'Return','btnrevert':'Undo Unsaved Changes','btnupload':'Upload','btnupdateprocessing':'Updating...','btnupdate':'Update','btnsubmit':'Submit','btnstart':'Start','btnskip':'Skip','btnshowall':'Show All','btnset':'Set','btnno':'No','btnsend':'Send','btnsearch':'Search','btnsaveprocessing':'Saving...','btnsavedraft':'Save Draft','btnsaveandnew':'Save and New','btnsaveandcopy':'Save and Copy','btnsaveandclose':'Save and Close','btnsave':'Save','btnrun':'Run','btnselectcurrentfolder':'Select Current Folder','btnnext':'Next','btnnew':'New','btnlistall':'List All','btnclearlist':'Clear List','btnclearchanges':'Clear Changes','btnclearall':'Clear All','btnclear':'Clear','btnchangepassword':'Change Password','btnchangelanguage':'Change Language','btnchange':'Change','btncancelprocessing':'Canceling...','btnclose':'Close','btncancel':'Cancel','btnback':'Back','btnapplyprocessing':'Applying...','btnapply':'Apply','btnadmin':'Admin','btnaddselected':'Add Selected','btnaddprocessing':'Adding...','btnaddanother':'Add Another','btnaddandnew':'Add and New','btnbrowse':'Browse','btnview':'View','btnconfirm':'Confirm','btncopy':'Copy','btninsert':'Insert','btnimport':'Import','btnhome':'Home','btnhistory':'History','btngoback':'Go Back','btngo':'Go','btnfinish':'Finish','btnexport':'Export','btncontinue':'Continue','btnedit':'Edit','btndontsave':'Don\u0027t Save','btndone':'Done','btndeleteselected':'Delete Selected','btndeleteprocessing':'Deleting...','btndelete':'Delete','btncustomize':'Customize','btncreateprocessing':'Creating...','btncreate':'Create','btndownload':'Download','btnyes':'Yes'},'framework.dialog':{'altclosedialog':'Close this Dialog','altjumpbottom':'Jump to bottom of [0] dialog','altjumptop':'Jump to top of [0] dialog','altresizedialog':'Resize this Dialog','lblsaveconfirmationprimary':'This page has been edited.','lblsaveconfirmationsecondary':'Do you want to save the changes?','titconfirmation':'Confirmation','titerror':'Error','titinformation':'Information','titinputrequested':'Choose a Value','titprocessing':'Processing...','titsavechanges':'Save Changes','titwarning':'Warning'},'framework.messagearea':{'hdrerrors':'Errors','lblstatus7':'Exported successfully','lblstatus6':'Imported successfully','lblstatus5':'Copied successfully','lblstatus4':'Reordered successfully','lblstatus3':'Created successfully','lblstatus2':'Deleted successfully','lblstatus17':'Restored successfully','lblstatus8':'Moved successfully','lblstatus16':'Rubric saved - Grade not published since the course end date is in the past','lblstatus14':'Rubric saved - Grade not published since the course is in an in-active state','lblstatus13':'Sent successfully','lblstatus12':'Unenrolled successfully','lblstatus11':'Enrolled successfully','lblstatus10':'Removed successfully','lblstatus1':'Saved successfully','lblerrors':'There were [0] error(s) found in the information you submitted:','lblstatus15':'Rubric saved - Grade not published since the course start date is in the future','lblstatus9':'Added successfully'}},{'standard.misc.txtloading':'Loading...','standard.misc.txtcopyright':'Powered by D2L Incorporated'});
+			D2L.Language.InitImg({'framework.messagearea':{'actstatus11':["0\/Framework.MessageArea.actStatus11.gif"],'actstatus12':["0\/Framework.MessageArea.actStatus12.gif"],'actstatus13':["0\/Framework.MessageArea.actStatus13.gif"],'actstatus3':["https:\/\/s.brightspace.com\/lib\/bsi\/2026.4.226\/images\/tier1\/file-document.svg",18],'actstatus6':["0\/Framework.MessageArea.actStatus6.gif"],'actstatus7':["0\/Framework.MessageArea.actStatus7.gif"]}},{});
+			function d2l_Onload() {
+				D2L.WebComponentsReady.then(function() {
+					UI.OnPageLoad().Trigger();
+					D2L.C('tAtom2489395_2792110_9882125','ctl_89');
+					D2L.C('tAtom2489395_2792110_9882126','ctl_92');
+					D2L.C('tAtom2489394_2792111_9882127','ctl_97');
+					D2L.C('tAtom2489394_2792111_9882128','ctl_100');
+					D2L.C('tAtom2356530_2992957_o2273','ctl_225');
+					D2L.C('tAtom2356530_2992957_o1228','ctl_229');
+					
+				});
+			}
+			function d2l_Onunload() {
+				UI.OnPageUnload().Trigger();
+				D2L.GarbageCollection.Dispose();
+			}
+		</script>
+		<script>
+		
+function GoToQuiz( quizId, isUserAuthorized ) {
+	if( isUserAuthorized ) {
+		DoGoToQuiz( quizId );
+	} else  {
+		var authResult = AuthorizeUser( quizId );
+		
+		authResult.Register( function( authOk ) {
+				if( authOk ) {
+					DoGoToQuiz( quizId );
+				}
+			}
+		);	
+	}
+}
+
+function DoGoToQuiz( quizId ) {
+	var ni = new D2L.NavInfo();
+	ni.navigation = '/d2l/lms/quizzing/user/quiz_summary.d2l';
+	ni.SetParam( 'qi', quizId );				
+	Nav.Go( ni );
+}
+
+function PreviewQuiz( quizId, isUserAuthorized ) {
+
+	if( isUserAuthorized ) {
+		DoPreviewQuiz( quizId );
+	} else  {
+		var authResult = AuthorizeUser( quizId );
+		
+		authResult.Register( function( authOk ) {
+				if( authOk ) {
+					DoPreviewQuiz( quizId );
+				}
+			}
+		);	
+	}	
+}
+
+function DoPreviewQuiz( quizId ) {
+	var ni = new D2L.NavInfo();
+	ni.navigation = '/d2l/lms/quizzing/user/quiz_summary.d2l';
+	ni.SetParam( 'bp', 1 );	
+	ni.SetParam( 'isprv', 1 );		
+	ni.SetParam( 'qi', quizId );
+	Nav.Go( ni );	
+}
+
+function AuthorizeUser( quizId ) {
+
+	var dr = new D2L.Util.DelayedReturn();
+
+	var hdl = function( response ) {
+		dr.Trigger( response.GetType() == D2L.Dialog.ResponseType.Positive ) ;
+		response.GetDialog().Close();
+	};
+	
+	ShowAuthorizationDialog(quizId, hdl);
+	
+	return dr;
+}
+
+function ShowAuthorizationDialog(quizId, hdl) {
+	
+	var dialog = new D2L.Dialog( 'dialog', hdl );
+	dialog.AddButton( D2L.Dialog.ButtonType.Cancel, '', 'cancelButton' );
+	var btnSubmit = dialog.AddCustomButton( 'Submit', D2L.Dialog.ButtonPosition.Right, D2L.Dialog.ResponseType.Positive, '', 'btnSubmit' );
+	btnSubmit.SetIsEnabled( false );
+
+	dialog.SetSrc( '/d2l/lms/authorizationschemes/commoncartridge/pin_entry.d2l', 'SrcCallback' );
+	
+	dialog.SetSrcParam( 'authCallback', '' );
+	dialog.SetSrcParam( 'resourceId',   quizId );
+	dialog.SetSrcParam( 'resourceType', '0' ); // 0 - quiz
+	dialog.SetSrcParam( 'cartridgeId',   '' );
+	
+	dialog.SetSize( 600, 600 );
+
+	dialog.SetTitle( 'Protected Resource' );
+	dialog.SetIsResizable(false);	
+
+	dialog.Open();		
+}
+			
+		</script>
+		<script>
+		function IsEmbeddedInASV() {
+	var win = window;
+	while(true) {
+		try {
+			
+			if (win.location.href.toLowerCase().indexOf("sequenceviewer") > -1) {
+				return true;
+			}
+		} catch (error) {
+			
+			return false;
+		}
+		if(win === win.parent) {
+			break;
+		}
+		win = win.parent;
+	}
+	return false;
+}
+		</script>
+		<script>
+		function FullyHideLockDownBrowserIFrameBySkippingTabIndex() {
+	var iframeLockDownBrowser = document.getElementById('LockDownBrowserLaunchFrame');
+	if( iframeLockDownBrowser ) {
+		iframeLockDownBrowser.tabIndex = -1;
+	}
+}
+
+		</script>
+		<script>
+		function GetReturnPoint(returnPointKey, defaultReturnPoint) {
+    return D2L.LP.Web.UI.Html.ReturnPoints.Get(
+        returnPointKey,
+        new D2L.LP.Web.Http.UrlLocation(defaultReturnPoint)
+    );
+}
+
+		</script>
+		<script>
+		function StyleFirstSection(targetId) {
+	var control = UI.GetControl(targetId);
+	if (control) {
+		var controlParent = control.IDomNode.parentNode;
+		controlParent.style.margin = '0 0 10px 0';
+	}
+}
+		</script>
+		<script>
+		function HandleItemClick( item ) {
+				var structure = item.GetStructure();
+				var placeholder = structure.GetOpener();
+				var quizId = structure.GetKey();
+				if( item.GetKey() == 'reports' ) {
+					var navInfo = new D2L.NavInfo();
+					navInfo.SetNavigation('/d2l/lms/quizzing/reports/quiz_reports.d2l?np=1isprv=&qi='+quizId+'&dnb=');
+					navInfo.target = "_top";
+					Nav.Go( navInfo );
+				}else if( item.GetKey() == 'summary' ) {
+					var navInfo = new D2L.NavInfo();
+					navInfo.SetNavigation('/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1isprv=&qi='+quizId+'&dnb=');
+					navInfo.target = "_top";
+					Nav.Go( navInfo );
+				}
+			}
+			
+			function ForceRedirectTheOpenerToSubmissionsPage(){
+				try {
+					window.opener.location = '/d2l/lms/quizzing/user/quiz_submissions.d2l?bp=1&isprv=&qi=387318&ou=762262';
+				} catch (error) {
+					window.location = '/d2l/lms/quizzing/user/quiz_submissions.d2l?bp=1&isprv=&qi=387318&ou=762262';
+				}
+			}
+			
+			function ExitQuiz() {
+				var n = new D2L.NavInfo();
+				n.navigation = '/d2l/lms/quizzing/admin/quizzes_manage.d2l';
+				n.SetTarget( '_top' );
+				Nav.Go( n );
+			}
+			
+			function ContentQuizImmersive() {
+				
+				
+				
+				var quizIframe;
+				var parentFrame = window.parent.parent;
+			    if (parentFrame.document.querySelector('iframe') && ((parentFrame.document.querySelector('iframe').getAttribute('src')?.indexOf('quiz_summary.d2l') > -1) ||
+				(parentFrame.document.querySelector('iframe').getAttribute('src')?.indexOf('quiz_submissions.d2l') > -1))) {
+			        quizIframe = parentFrame.document.querySelector('iframe');
+			    }
+
+			    if (quizIframe && parentFrame.D2L.LP.Web.UI.Desktop.MasterPages.Immersive) {
+			        parentFrame.D2L.LP.Web.UI.Desktop.MasterPages.Immersive.MakeImmersive(quizIframe);
+					if (!quizIframe.classList.contains ('immersive-quiz')) {
+						quizIframe.classList.add('immersive-submission-attempt');
+					}
+					if (is_iOS9 && is_iOS9 === "True") {
+						quizIframe.style.position = "static";
+					}
+			    }
+				
+			}
+			
+			function ContentQuizRemoveImmersive() {
+				var quizIframe;
+				var parentFrame = window.parent.parent;
+			    if (parentFrame.document.querySelector('iframe') && ((parentFrame.document.querySelector('iframe').getAttribute('src')?.indexOf('quiz_summary.d2l') > -1) ||
+				(parentFrame.document.querySelector('iframe').getAttribute('src')?.indexOf('quiz_submissions.d2l') > -1))){
+			        quizIframe = parentFrame.document.querySelector('iframe');
+			    }
+
+			    if (quizIframe && parentFrame.D2L.LP.Web.UI.Desktop.MasterPages.Immersive) {
+			        parentFrame.D2L.LP.Web.UI.Desktop.MasterPages.Immersive.RemoveImmersive(quizIframe);
+			        quizIframe.classList.remove('immersive-quiz');
+					quizIframe.classList.remove('immersive-submission-attempt');
+
+					if (parentFrame.document.getElementById('ContentView')) {
+						parentFrame.document.getElementById('ContentView').setAttribute('aria-live', true);
+					}
+					if (parentFrame.document.getElementById('QuizContentViewPlaceHolder')) {
+						parentFrame.document.getElementById('QuizContentViewPlaceHolder').setAttribute('aria-live', true);
+					}
+					
+					parentFrame.dispatchEvent(new Event('resize'));
+			    }
+			}
+			
+			function GoToSubmissions() {
+				var isFromContent = false;
+				var parentWindow = window.parent.parent.parent;
+
+				var isFromOldContent = parentWindow.location.href.indexOf("content") !== -1;
+				var isFromNewContent = parentWindow.location.href.indexOf("enhancedSequenceViewer") !== -1;
+				if(isFromOldContent || isFromNewContent) {
+					isFromContent = true;
+				}
+	
+				var n = new D2L.NavInfo();
+				var cfql = 0;
+				n.SetNavigation('/d2l/lms/quizzing/user/quiz_submissions.d2l?isprv=&fromQB=0&qi=387318&cfql=' + cfql);
+				
+				if (isFromContent) {
+					ContentQuizRemoveImmersive();
+					if (parent === parentWindow) {
+						n.SetTarget( '_self' );
+					} else {
+						n.SetTarget( '_parent' );
+					}
+				} else if (IsEmbeddedInASV()) {
+					n.SetTarget( '_self' );
+				} else {
+					n.SetTarget( '_top' );
+				}
+				Nav.Go( n );
+			}
+			
+			function ExitSubmissionAttempt() {
+				var cameFromTab = UI.GetControl('HDN_cft')?.GetValue();
+				var quizId = 387318;
+				var orgUnitId = 762262;
+				if (cameFromTab === 'ad') {
+					var activityDisplayReturnPointUrl = GetReturnPoint(`Content.ActivityDisplay.QuizAttempt.${quizId}`, '/d2l/lms/quizzing/user/quiz_summary.d2l?qi=' + quizId + '&ou=' + orgUnitId);
+					var n = new D2L.NavInfo();
+					n.navigation = activityDisplayReturnPointUrl.GetUrl();
+					n.SetParam('shouldFocus', true);
+					n.SetTarget( '_top' );
+					Nav.Go( n );
+				} else {
+					GoToSubmissions();
+				}
+			}
+		</script>
+		<script>
+		var LockDownBrowser = ( function() {
+    var LAUNCH_BUTTON = "BTN_LockDownBrowserLaunch",
+        LAUNCH_MESSAGE_CONTAINER = "CTN_lockDownBrowserMessage",
+        INSTALLATION_STATUS_LABEL = "LBL_installationStatus",
+        RESPONDUS_DETECTION_TIMEOUT = 3000, 
+        DELAY_RESET_OF_LAUNCHING_TEXT_AFTER_SUCCESS = 2000, 
+        timeout = null,
+        showRefreshDialog = false;
+
+    function init() {
+        var launchMessageContainer = UI.GetControl( LAUNCH_MESSAGE_CONTAINER );
+        var installationStatusLabel = UI.GetControl( INSTALLATION_STATUS_LABEL );
+        if( launchMessageContainer ) {
+            $( launchMessageContainer.IDomNode ).addClass( 'lockDownBrowserMessage' );
+        }
+        if( installationStatusLabel ) {
+            $( installationStatusLabel.IDomNode ).addClass( 'header' );
+        }
+    }
+
+    function launch( quizId, deepLinkId, showDialog) {
+        hideInstallationStatusError();
+
+        var launchButton = UI.GetControl( LAUNCH_BUTTON );
+        launchButton.SetIsEnabled( false );
+        $( launchButton.IDomNode ).attr( 'role', 'alert' ); // for screen readers
+        launchButton.SetText( new D2L.LP.Text.LangTerm( 'Quizzes.UserQuizSummary.txtCheckingLDB' ) );
+        showRefreshDialog = showDialog;
+        
+        D2L.Rpc.Create( 'GetRespondusLink', getRespondusLinkCallBack, '/d2l/lms/quizzing/rpc/rpc_functions.d2l' ).Call( quizId, deepLinkId );
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function getRespondusLinkCallBack( rpcResponse ) {
+        if( rpcResponse.GetResponseType() != D2L.Rpc.ResponseType.Success ) {
+            onRpcError();
+            return;
+        }
+
+        setupTimeoutAndEventHandlers();
+
+        try {
+            var launchLink = rpcResponse.GetResult();
+
+            
+            var cbLDBex = getCookie('cbLDBex');
+
+            if (cbLDBex) {
+                launchLink = 'data:text/plain,' + launchLink;
+            } 
+
+	        if( isiOSDetected() ) {
+		        window.top.location.href = launchLink;
+	        } else {
+		        $( '#LockDownBrowserLaunchFrame' )[0].contentWindow.location.href = launchLink;
+	        }
+        } catch( e ) {
+            
+            onNotDetected();
+        }
+    }
+
+	function isiOSDetected() {
+		/*first condition will detect iOS 13 (iPad < 13) ... second will detect iPad 13 due to a setting that now treats
+		iPad Safari as if it is a Mac desktop (Mac desktops currently (as of 2019) don't support multi touch) ...
+		stackoverflow.com/questions/58019463/how-to-detect-device-name-in-safari-on-ios-13-while-it-doesnt-show-the-correct*/
+        return (navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/)) 
+		|| (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); 
+	}
+
+    function onNotDetected() {
+        removeTimeoutAndEventHandlers();
+        showInstallationStatusErrorWithLangTerm( 'Quizzes.UserQuizSummary.lblLDBNotFound' );
+        setLaunchButtonToLangTerm( 'Quizzes.UserQuizSummary.txtLDBNotFound' );
+
+        setTimeout( function() {
+            setLaunchButtonToLangTerm( 'Quizzes.UserQuizSummary.btnReLaunchLDB' ).SetIsEnabled( true );
+        }, RESPONDUS_DETECTION_TIMEOUT );
+    }
+
+    function onDetected() {
+        removeTimeoutAndEventHandlers();
+        setTimeout( function() {
+            setLaunchButtonToLangTerm( 'Quizzes.UserQuizSummary.btnLaunchLDB' ).SetIsEnabled( true );
+        }, DELAY_RESET_OF_LAUNCHING_TEXT_AFTER_SUCCESS );
+
+        if ( showRefreshDialog ) setupRefreshDialog();
+    }
+
+    function setupRefreshDialog() {
+        var refreshDialog = new D2L.Dialog.Prompt( "refreshPage" );
+
+        refreshDialog.SetCallback( function( response ) {
+            if( response.GetType() == D2L.Dialog.ResponseType.Positive ) {
+                refreshDialog.Close();
+                window.location.reload();
+            }
+        } );
+        refreshDialog.SetTitle( 'LockDown Browser Status' );
+        refreshDialog.SetPrimaryMessage( 'If you\u2019ve completed the quiz with LockDown Browser, click Done.' );
+        refreshDialog.SetSecondaryMessage( 'If LockDown Browser didn\u2019t open, make sure you have the latest version installed, and then try launching again.' );
+        refreshDialog.SetPositiveButtonText( 'Done' );
+
+        refreshDialog.Open();
+    }
+
+    function onRpcError() {
+        showInstallationStatusErrorWithLangTerm( 'Quizzes.UserQuizSummary.lblLaunchError' );
+        setLaunchButtonToLangTerm( 'Quizzes.UserQuizSummary.btnReLaunchLDB' ).SetIsEnabled( true );
+    }
+
+    function setupTimeoutAndEventHandlers() {
+        timeout = setTimeout( onNotDetected, UI.GetByName( 'LockDownBrowserLaunchTimeout' ).value );
+        window.addEventListener( 'pagehide', onDetected );
+        window.addEventListener( 'blur', onDetected );
+    }
+
+    function removeTimeoutAndEventHandlers() {
+        if( timeout ) {
+            clearTimeout( timeout );
+            timeout = null;
+        }
+        window.removeEventListener( 'pagehide', onDetected );
+        window.removeEventListener( 'blur', onDetected );
+    }
+
+    function setLaunchButtonToLangTerm( langTerm ) {
+        var launchButton = UI.GetControl( LAUNCH_BUTTON );
+        launchButton.SetText( new D2L.LP.Text.LangTerm( langTerm ) );
+        return launchButton;
+    }
+
+    function hideInstallationStatusError() {
+        var $container = $( UI.GetControl( LAUNCH_MESSAGE_CONTAINER ).IDomNode );
+        var $statusLabel = $( UI.GetControl( INSTALLATION_STATUS_LABEL ).IDomNode );
+        $container.find( '#warning_icon' ).hide();
+        $statusLabel.hide();
+        $container.removeClass( 'error icon' );
+    }
+
+    function showInstallationStatusErrorWithLangTerm( langTerm ) {
+        var $container = $( UI.GetControl( LAUNCH_MESSAGE_CONTAINER ).IDomNode );
+        var $warningIcon = $container.find( '#warning_icon' );
+        if( $warningIcon.length == 0 ) {
+            $container.prepend( '<div id="warning_icon" class="warning icon" style="display:none;">&#x21;</div>' );
+            $warningIcon = $container.find( '#warning_icon' );
+        }
+        $container.addClass( 'error icon' );
+        var statusLabel = UI.GetControl( INSTALLATION_STATUS_LABEL );
+        statusLabel.SetText( new D2L.LP.Text.LangTerm( langTerm ) );
+        $( UI.GetControl( 'LNK_download' ).IDomNode ).attr( 'role', 'alert' );
+
+        $warningIcon.show( 'fade' );
+        $( statusLabel.IDomNode ).show( 'fade' );
+
+        window.scrollTo( 0, document.body.scrollHeight );
+    }
+
+    return {
+        init: init,
+        launch: launch
+    };
+} )();
+
+$( LockDownBrowser.init );
+		</script>
+<style id="d2l-colors">
+		html {
+			/* basic grays (lightest to darkest) */
+			--d2l-color-regolith: #f9fbff;
+			--d2l-color-sylvite: #f1f5fb;
+			--d2l-color-gypsum: #e3e9f1;
+			--d2l-color-mica: #cdd5dc;
+			--d2l-color-corundum: #b1b9be;
+			--d2l-color-chromite: #90989d;
+			--d2l-color-galena: #6e7477;
+			--d2l-color-tungsten: #494c4e;
+			--d2l-color-ferrite: #202122;
+
+			/* zircon */
+			--d2l-color-zircon-plus-2: #e0feff;
+			--d2l-color-zircon-plus-1: #00d2ed;
+			--d2l-color-zircon: #008eab;
+			--d2l-color-zircon-minus-1: #035670;
+
+			/* celestine */
+			--d2l-color-celestine-plus-2: #e8f8ff;
+			--d2l-color-celestine-plus-1: #29a6ff;
+			--d2l-color-celestine: #006fbf;
+			--d2l-color-celestine-minus-1: #004489;
+
+			/* amethyst */
+			--d2l-color-amethyst-plus-2: #f2f0ff;
+			--d2l-color-amethyst-plus-1: #8982ff;
+			--d2l-color-amethyst: #6038ff;
+			--d2l-color-amethyst-minus-1: #4500db;
+
+			/* fluorite */
+			--d2l-color-fluorite-plus-2: #f9ebff;
+			--d2l-color-fluorite-plus-1: #ce68fa;
+			--d2l-color-fluorite: #9d1fd4;
+			--d2l-color-fluorite-minus-1: #6900a0;
+
+			/* tourmaline */
+			--d2l-color-tourmaline-plus-2: #ffebf6;
+			--d2l-color-tourmaline-plus-1: #fd4e9d;
+			--d2l-color-tourmaline: #d40067;
+			--d2l-color-tourmaline-minus-1: #990056;
+
+			/* cinnabar */
+			--d2l-color-cinnabar-plus-2: #ffede8;
+			--d2l-color-cinnabar-plus-1: #ff575a;
+			--d2l-color-cinnabar: #cd2026;
+			--d2l-color-cinnabar-minus-1: #990006;
+
+			/* carnelian */
+			--d2l-color-carnelian-plus-1: #fff3e0;
+			--d2l-color-carnelian: #e87511;
+			--d2l-color-carnelian-minus-1: #ba4700;
+			--d2l-color-carnelian-minus-2: #7d2600;
+
+			/* citrine */
+			--d2l-color-citrine-plus-1: #fff9d6;
+			--d2l-color-citrine: #ffba59;
+			--d2l-color-citrine-minus-1: #c47400;
+			--d2l-color-citrine-minus-2: #7a4300;
+
+			/* peridot */
+			--d2l-color-peridot-plus-1: #efffd9;
+			--d2l-color-peridot: #8ad934;
+			--d2l-color-peridot-minus-1: #4a8f00;
+			--d2l-color-peridot-minus-2: #2f5e00;
+
+			/* olivine */
+			--d2l-color-olivine-plus-1: #e7ffe3;
+			--d2l-color-olivine: #46a661;
+			--d2l-color-olivine-minus-1: #027a21;
+			--d2l-color-olivine-minus-2: #005614;
+
+			/* malachite */
+			--d2l-color-malachite-plus-1: #e3fff5;
+			--d2l-color-malachite: #2de2c0;
+			--d2l-color-malachite-minus-1: #00a490;
+			--d2l-color-malachite-minus-2: #00635e;
+
+			/* primary accent */
+			--d2l-color-primary-accent-action: var(--d2l-color-celestine);
+			--d2l-color-primary-accent-indicator: var(--d2l-color-carnelian);
+
+			/* feedback */
+			--d2l-color-feedback-error: var(--d2l-color-cinnabar);
+			--d2l-color-feedback-warning: var(--d2l-color-carnelian);
+			--d2l-color-feedback-success: var(--d2l-color-olivine);
+			--d2l-color-feedback-action: var(--d2l-color-celestine);
+		}
+
+		/* semantic palette */
+		html {
+			
+		--d2l-sem-background-color-base: #ffffff;
+		--d2l-sem-background-color-elevated: var(--d2l-sem-background-color-base);
+		--d2l-sem-background-color-floating: var(--d2l-sem-background-color-base);
+		--d2l-sem-background-color-interactive-faint-default: var(--d2l-color-regolith);
+		--d2l-sem-background-color-interactive-faint-hover: var(--d2l-color-sylvite);
+		--d2l-sem-background-color-interactive-highlighted: var(--d2l-sem-brand-color-highlight);
+		--d2l-sem-background-color-interactive-primary-default: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-background-color-interactive-primary-hover: var(--d2l-sem-brand-color-primary-hover);
+		--d2l-sem-background-color-interactive-secondary-default: var(--d2l-color-gypsum);
+		--d2l-sem-background-color-interactive-secondary-hover: var(--d2l-color-mica);
+		--d2l-sem-background-color-interactive-tertiary-default: #ffffff;
+		--d2l-sem-background-color-interactive-tertiary-hover: var(--d2l-sem-background-color-interactive-secondary-default);
+		--d2l-sem-background-color-interactive-translucent-default: #000000;
+		--d2l-sem-background-color-interactive-translucent-hover: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-background-color-sunken: #f6f7f8;
+		--d2l-sem-border-color-emphasized: var(--d2l-color-galena);
+		--d2l-sem-border-color-focus: var(--d2l-color-celestine);
+		--d2l-sem-border-color-standard: var(--d2l-color-mica);
+		--d2l-sem-border-color-subtle: var(--d2l-color-gypsum);
+		--d2l-sem-brand-color-highlight: var(--d2l-color-celestine-plus-2);
+		--d2l-sem-brand-color-primary-default: var(--d2l-color-celestine);
+		--d2l-sem-brand-color-primary-hover: var(--d2l-color-celestine-minus-1);
+		--d2l-sem-icon-color-faint: var(--d2l-sem-border-color-standard);
+		--d2l-sem-icon-color-inverted: #ffffff;
+		--d2l-sem-icon-color-standard: var(--d2l-color-tungsten);
+		--d2l-sem-status-color-default: var(--d2l-color-celestine);
+		--d2l-sem-status-color-error: var(--d2l-color-cinnabar);
+		--d2l-sem-status-color-success-text: var(--d2l-color-olivine-minus-1);
+		--d2l-sem-status-color-success: var(--d2l-color-olivine);
+		--d2l-sem-status-color-warning-text: var(--d2l-color-carnelian-minus-1);
+		--d2l-sem-status-color-warning: var(--d2l-color-carnelian);
+		--d2l-sem-text-color-interactive-default: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-text-color-interactive-hover: var(--d2l-sem-brand-color-primary-hover);
+		--d2l-sem-text-color-static-faint: var(--d2l-color-galena);
+		--d2l-sem-text-color-static-inverted: #ffffff;
+		--d2l-sem-text-color-static-standard: var(--d2l-color-ferrite);
+		--d2l-sem-text-color-static-subtle: var(--d2l-color-tungsten);
+
+		--d2l-sem-opacity-disabled-control: 0.5;
+		--d2l-sem-opacity-disabled-link: 0.74;
+		--d2l-sem-opacity-disabled-linkicon: 0.64;
+
+		--d2l-sem-shadow-attached-color: rgba(0, 0, 0, 0.03);
+		--d2l-sem-shadow-attached-offset-x: 0;
+		--d2l-sem-shadow-attached-offset-y: 2px;
+		--d2l-sem-shadow-attached-blur: 4px;
+		--d2l-sem-shadow-attached-spread: 0;
+		--d2l-sem-shadow-attached: var(--d2l-shadow-attached-offset-x) var(--d2l-shadow-attached-offset-y) var(--d2l-shadow-attached-blur) var(--d2l-shadow-attached-spread) var(--d2l-shadow-attached-color);
+		--d2l-sem-shadow-floating-color: rgba(0, 0, 0, 0.15);
+		--d2l-sem-shadow-floating-offset-x: 0;
+		--d2l-sem-shadow-floating-offset-y: 2px;
+		--d2l-sem-shadow-floating-blur: 12px;
+		--d2l-sem-shadow-floating-spread: 0;
+		--d2l-sem-shadow-floating: var(--d2l-shadow-floating-offset-x) var(--d2l-shadow-floating-offset-y) var(--d2l-shadow-floating-blur) var(--d2l-shadow-floating-spread) var(--d2l-shadow-floating-color);
+		--d2l-sem-shadow-inset-color: rgba(177, 185, 190, 0.2); /* corundum */
+		--d2l-sem-shadow-inset-offset-x: 0;
+		--d2l-sem-shadow-inset-offset-y: 2px;
+		--d2l-sem-shadow-inset-blur: 0;
+		--d2l-sem-shadow-inset-spread: 0;
+		--d2l-sem-shadow-inset: inset var(--d2l-shadow-inset-offset-x) var(--d2l-shadow-inset-offset-y) var(--d2l-shadow-inset-blur) var(--d2l-shadow-inset-spread) var(--d2l-shadow-inset-color);
+	
+		}
+		html[data-color-mode="dark"] {
+			
+		--d2l-sem-background-color-base: #161718;
+		--d2l-sem-background-color-elevated: var(--d2l-color-ferrite);
+		--d2l-sem-background-color-floating: var(--d2l-color-ferrite);
+		--d2l-sem-background-color-interactive-faint-default: var(--d2l-color-ferrite);
+		--d2l-sem-background-color-interactive-faint-hover: #303335;
+		--d2l-sem-background-color-interactive-highlighted: var(--d2l-sem-brand-color-highlight);
+		--d2l-sem-background-color-interactive-primary-default: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-background-color-interactive-primary-hover: var(--d2l-sem-brand-color-primary-hover);
+		--d2l-sem-background-color-interactive-secondary-default: #303335;
+		--d2l-sem-background-color-interactive-secondary-hover: var(--d2l-color-ferrite);
+		--d2l-sem-background-color-interactive-tertiary-default: #000000;
+		--d2l-sem-background-color-interactive-tertiary-hover: var(--d2l-sem-background-color-interactive-secondary-default);
+		--d2l-sem-background-color-interactive-translucent-default: #000000;
+		--d2l-sem-background-color-interactive-translucent-hover: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-background-color-sunken: #000000;
+		--d2l-sem-border-color-emphasized: var(--d2l-color-galena);
+		--d2l-sem-border-color-focus: var(--d2l-color-celestine-plus-1);
+		--d2l-sem-border-color-standard: var(--d2l-color-tungsten);
+		--d2l-sem-border-color-subtle: #303335;
+		--d2l-sem-brand-color-highlight: #161718;
+		--d2l-sem-brand-color-primary-default: var(--d2l-color-celestine-plus-1);
+		--d2l-sem-brand-color-primary-hover: var(--d2l-color-celestine);
+		--d2l-sem-icon-color-faint: var(--d2l-sem-border-color-standard);
+		--d2l-sem-icon-color-inverted: #ffffff;
+		--d2l-sem-icon-color-standard: var(--d2l-color-corundum);
+		--d2l-sem-status-color-default: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-status-color-error: var(--d2l-color-cinnabar-plus-1);
+		--d2l-sem-status-color-success-text: #ffffff;
+		--d2l-sem-status-color-success: var(--d2l-color-olivine);
+		--d2l-sem-status-color-warning-text: var(--d2l-color-carnelian);
+		--d2l-sem-status-color-warning: var(--d2l-color-carnelian);
+		--d2l-sem-text-color-interactive-default: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-text-color-interactive-hover: var(--d2l-sem-brand-color-primary-hover);
+		--d2l-sem-text-color-static-faint: var(--d2l-color-galena);
+		--d2l-sem-text-color-static-inverted: #161718;
+		--d2l-sem-text-color-static-standard: var(--d2l-color-mica);
+		--d2l-sem-text-color-static-subtle: var(--d2l-color-chromite);
+
+		--d2l-sem-opacity-disabled-control: 0.5;
+		--d2l-sem-opacity-disabled-link: 0.74;
+		--d2l-sem-opacity-disabled-linkicon: 0.64;
+
+		--d2l-sem-shadow-attached-color: rgba(0, 0, 0, 0.03);
+		--d2l-sem-shadow-attached-offset-x: 0;
+		--d2l-sem-shadow-attached-offset-y: 2px;
+		--d2l-sem-shadow-attached-blur: 4px;
+		--d2l-sem-shadow-attached-spread: 0;
+		--d2l-sem-shadow-attached: var(--d2l-shadow-attached-offset-x) var(--d2l-shadow-attached-offset-y) var(--d2l-shadow-attached-blur) var(--d2l-shadow-attached-spread) var(--d2l-shadow-attached-color);
+		--d2l-sem-shadow-floating-color: rgba(0, 0, 0, 0.85);
+		--d2l-sem-shadow-floating-offset-x: 0;
+		--d2l-sem-shadow-floating-offset-y: 2px;
+		--d2l-sem-shadow-floating-blur: 12px;
+		--d2l-sem-shadow-floating-spread: 0;
+		--d2l-sem-shadow-floating: var(--d2l-shadow-floating-offset-x) var(--d2l-shadow-floating-offset-y) var(--d2l-shadow-floating-blur) var(--d2l-shadow-floating-spread) var(--d2l-shadow-floating-color);
+		--d2l-sem-shadow-inset-color: rgba(177, 185, 190, 0.2); /* corundum */
+		--d2l-sem-shadow-inset-offset-x: 0;
+		--d2l-sem-shadow-inset-offset-y: 2px;
+		--d2l-sem-shadow-inset-blur: 0;
+		--d2l-sem-shadow-inset-spread: 0;
+		--d2l-sem-shadow-inset: inset var(--d2l-shadow-inset-offset-x) var(--d2l-shadow-inset-offset-y) var(--d2l-shadow-inset-blur) var(--d2l-shadow-inset-spread) var(--d2l-shadow-inset-color);
+	
+		}
+		@media (prefers-color-scheme: dark) {
+			html[data-color-mode="os"] {
+				
+		--d2l-sem-background-color-base: #161718;
+		--d2l-sem-background-color-elevated: var(--d2l-color-ferrite);
+		--d2l-sem-background-color-floating: var(--d2l-color-ferrite);
+		--d2l-sem-background-color-interactive-faint-default: var(--d2l-color-ferrite);
+		--d2l-sem-background-color-interactive-faint-hover: #303335;
+		--d2l-sem-background-color-interactive-highlighted: var(--d2l-sem-brand-color-highlight);
+		--d2l-sem-background-color-interactive-primary-default: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-background-color-interactive-primary-hover: var(--d2l-sem-brand-color-primary-hover);
+		--d2l-sem-background-color-interactive-secondary-default: #303335;
+		--d2l-sem-background-color-interactive-secondary-hover: var(--d2l-color-ferrite);
+		--d2l-sem-background-color-interactive-tertiary-default: #000000;
+		--d2l-sem-background-color-interactive-tertiary-hover: var(--d2l-sem-background-color-interactive-secondary-default);
+		--d2l-sem-background-color-interactive-translucent-default: #000000;
+		--d2l-sem-background-color-interactive-translucent-hover: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-background-color-sunken: #000000;
+		--d2l-sem-border-color-emphasized: var(--d2l-color-galena);
+		--d2l-sem-border-color-focus: var(--d2l-color-celestine-plus-1);
+		--d2l-sem-border-color-standard: var(--d2l-color-tungsten);
+		--d2l-sem-border-color-subtle: #303335;
+		--d2l-sem-brand-color-highlight: #161718;
+		--d2l-sem-brand-color-primary-default: var(--d2l-color-celestine-plus-1);
+		--d2l-sem-brand-color-primary-hover: var(--d2l-color-celestine);
+		--d2l-sem-icon-color-faint: var(--d2l-sem-border-color-standard);
+		--d2l-sem-icon-color-inverted: #ffffff;
+		--d2l-sem-icon-color-standard: var(--d2l-color-corundum);
+		--d2l-sem-status-color-default: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-status-color-error: var(--d2l-color-cinnabar-plus-1);
+		--d2l-sem-status-color-success-text: #ffffff;
+		--d2l-sem-status-color-success: var(--d2l-color-olivine);
+		--d2l-sem-status-color-warning-text: var(--d2l-color-carnelian);
+		--d2l-sem-status-color-warning: var(--d2l-color-carnelian);
+		--d2l-sem-text-color-interactive-default: var(--d2l-sem-brand-color-primary-default);
+		--d2l-sem-text-color-interactive-hover: var(--d2l-sem-brand-color-primary-hover);
+		--d2l-sem-text-color-static-faint: var(--d2l-color-galena);
+		--d2l-sem-text-color-static-inverted: #161718;
+		--d2l-sem-text-color-static-standard: var(--d2l-color-mica);
+		--d2l-sem-text-color-static-subtle: var(--d2l-color-chromite);
+
+		--d2l-sem-opacity-disabled-control: 0.5;
+		--d2l-sem-opacity-disabled-link: 0.74;
+		--d2l-sem-opacity-disabled-linkicon: 0.64;
+
+		--d2l-sem-shadow-attached-color: rgba(0, 0, 0, 0.03);
+		--d2l-sem-shadow-attached-offset-x: 0;
+		--d2l-sem-shadow-attached-offset-y: 2px;
+		--d2l-sem-shadow-attached-blur: 4px;
+		--d2l-sem-shadow-attached-spread: 0;
+		--d2l-sem-shadow-attached: var(--d2l-shadow-attached-offset-x) var(--d2l-shadow-attached-offset-y) var(--d2l-shadow-attached-blur) var(--d2l-shadow-attached-spread) var(--d2l-shadow-attached-color);
+		--d2l-sem-shadow-floating-color: rgba(0, 0, 0, 0.85);
+		--d2l-sem-shadow-floating-offset-x: 0;
+		--d2l-sem-shadow-floating-offset-y: 2px;
+		--d2l-sem-shadow-floating-blur: 12px;
+		--d2l-sem-shadow-floating-spread: 0;
+		--d2l-sem-shadow-floating: var(--d2l-shadow-floating-offset-x) var(--d2l-shadow-floating-offset-y) var(--d2l-shadow-floating-blur) var(--d2l-shadow-floating-spread) var(--d2l-shadow-floating-color);
+		--d2l-sem-shadow-inset-color: rgba(177, 185, 190, 0.2); /* corundum */
+		--d2l-sem-shadow-inset-offset-x: 0;
+		--d2l-sem-shadow-inset-offset-y: 2px;
+		--d2l-sem-shadow-inset-blur: 0;
+		--d2l-sem-shadow-inset-spread: 0;
+		--d2l-sem-shadow-inset: inset var(--d2l-shadow-inset-offset-x) var(--d2l-shadow-inset-offset-y) var(--d2l-shadow-inset-blur) var(--d2l-shadow-inset-spread) var(--d2l-shadow-inset-color);
+	
+			}
+		}
+	</style><style class="darkreader darkreader--sync" media="screen"></style><script async="" src="quiz10_files/prism.js"></script><style>
+
+	
+		pre[class*="language-"].d2l-code,
+		code[class*="language-"].d2l-code {
+			--d2l-code-background: #f9fbff;
+			--d2l-code-language: #6e7477;
+			--d2l-code-line-numbers: #6e7477;
+			--d2l-code-line-numbers-background: #f1f5fb;
+			--d2l-code-token-atrule: #d40067;
+			--d2l-code-token-attribute-name: #006fbf;
+			--d2l-code-token-attribute-value: #c74c00;
+			--d2l-code-token-boolean: #004489;
+			--d2l-code-token-builtin: #d40067;
+			--d2l-code-token-char: #c74c00;
+			--d2l-code-token-class-name: #00635e;
+			--d2l-code-token-comment: #6e7477;
+			--d2l-code-token-constant: #035670;
+			--d2l-code-token-default: #202122;
+			--d2l-code-token-entity: #004489;
+			--d2l-code-token-function: #006fbf;
+			--d2l-code-token-important: #cd2026;
+			--d2l-code-token-interpolation: #006fbf;
+			--d2l-code-token-interpolation-punctuation: #004489;
+			--d2l-code-token-keyword: #d40067;
+			--d2l-code-token-number: #494c4e;
+			--d2l-code-token-operator: #006fbf;
+			--d2l-code-token-property: #008eab;
+			--d2l-code-token-punctuation: #494c4e;
+			--d2l-code-token-regex: #006fbf;
+			--d2l-code-token-selector: #006fbf;
+			--d2l-code-token-string: #c74c00;
+			--d2l-code-token-symbol: #00635e;
+			--d2l-code-token-tag: #006fbf;
+			--d2l-code-token-url: #494c4e;
+		}
+	
+	
+		pre[class*="language-"].d2l-code-dark,
+		code[class*="language-"].d2l-code-dark {
+			--d2l-code-background: #202122;
+			--d2l-code-language: #90989d;
+			--d2l-code-line-numbers: #9ea5a9;
+			--d2l-code-line-numbers-background: #303133;
+			--d2l-code-token-atrule: #fd4e9d;
+			--d2l-code-token-attribute-name: #92d1ff;
+			--d2l-code-token-attribute-value: #e9ba79;
+			--d2l-code-token-boolean: #2896e4;
+			--d2l-code-token-builtin: #fd4e9d;
+			--d2l-code-token-char: #e9ba79;
+			--d2l-code-token-class-name: #2ccfb0;
+			--d2l-code-token-comment: #90989d;
+			--d2l-code-token-constant: #00d2ed;
+			--d2l-code-token-default: #cdd5dc;
+			--d2l-code-token-entity: #29a6ff;
+			--d2l-code-token-function: #fff9d6;
+			--d2l-code-token-important: #ff575a;
+			--d2l-code-token-interpolation: #92d1ff;
+			--d2l-code-token-interpolation-punctuation: #29a6ff;
+			--d2l-code-token-keyword: #e94a92;
+			--d2l-code-token-number: #cdd5dc;
+			--d2l-code-token-operator: #cdd5dc;
+			--d2l-code-token-property: #92d1ff;
+			--d2l-code-token-punctuation: #cdd5dc;
+			--d2l-code-token-regex: #29A6FF;
+			--d2l-code-token-selector: #fff9d6;
+			--d2l-code-token-string: #e9ba79;
+			--d2l-code-token-symbol: #2de2c0;
+			--d2l-code-token-tag: #2899e9;
+			--d2l-code-token-url: #cdd5dc;
+		}
+	
+
+	pre[class*="language-"].d2l-code,
+	pre[class*="language-"].d2l-code > code[class*="language-"],
+	code[class*="language-"].d2l-code {
+		font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+		line-height: 1.5;
+		text-shadow: none;
+	}
+
+	pre[class*="language-"].d2l-code > code[class*="language-"],
+	code[class*="language-"].d2l-code {
+		color: var(--d2l-code-token-default);
+		-webkit-hyphens: none;
+		-moz-hyphens: none;
+		-ms-hyphens: none;
+		hyphens: none;
+		overflow-wrap: normal;
+		white-space: pre;
+		word-break: normal;
+		word-spacing: normal;
+	}
+
+	pre[class*="language-"].d2l-code {
+		background-color: var(--d2l-code-background);
+		border-radius: 6px;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+		font-size: 14px;
+		margin: 0.5em 0;
+		overflow: auto;
+		padding: 1em;
+		position: relative;
+		-moz-tab-size: 4;
+		-o-tab-size: 4;
+		tab-size: 4;
+		text-align: left;
+	}
+
+	pre[class*="language-"].d2l-code::before {
+		color: var(--d2l-code-language);
+		content: attr(data-language);
+		font-family: "Lato", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		margin: 0.1rem 0.4rem;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	code[class*="language-"].d2l-code {
+		background-color: var(--d2l-code-background);
+		border-radius: 6px;
+		padding: 0.1em;
+		white-space: normal;
+	}
+
+	.token.comment,
+	.token.block-comment,
+	.token.prolog,
+	.token.doctype,
+	.token.cdata {
+		color: var(--d2l-code-token-comment);
+	}
+
+	.token.punctuation { color: var(--d2l-code-token-punctuation); }
+	.token.number { color: var(--d2l-code-token-number); }
+	.token.operator { color: var(--d2l-code-token-operator); }
+
+	.token.interpolation { color: var(--d2l-code-token-interpolation); }
+	.token.attr-name { color: var(--d2l-code-token-attribute-name); }
+	.token.constant { color: var(--d2l-code-token-constant); }
+	.token.property { color: var(--d2l-code-token-property); }
+
+	.token.tag { color: var(--d2l-code-token-tag); }
+	.token.boolean { color: var(--d2l-code-token-boolean); }
+	.token.entity { color: var(--d2l-code-token-entity); }
+	.token.interpolation-punctuation { color: var(--d2l-code-token-interpolation-punctuation); }
+
+	.token.function { color: var(--d2l-code-token-function); }
+
+	.token.class-name { color: var(--d2l-code-token-class-name); }
+	.token.symbol { color: var(--d2l-code-token-symbol); }
+
+	.token.builtin { color: var(--d2l-code-token-builtin); }
+	.token.keyword { color: var(--d2l-code-token-keyword); }
+	.token.atrule { color: var(--d2l-code-token-atrule); }
+
+	.token.selector { color: var(--d2l-code-token-selector); }
+
+	.token.important { color: var(--d2l-code-token-important); }
+	.token.regex { color: var(--d2l-code-token-regex); }
+
+	.token.string { color: var(--d2l-code-token-string); }
+	.token.char { color: var(--d2l-code-token-char); }
+	.token.attr-value { color: var(--d2l-code-token-attribute-value); }
+
+	.token.url { color: var(--d2l-code-token-url); }
+
+	.language-css .token.string,
+	.style .token.string,
+	.token.entity,
+	.token.operator,
+	.token.url {
+		background-color: transparent;
+	}
+
+	pre[class*="language-"].d2l-code.line-numbers {
+		counter-reset: linenumber;
+		padding-left: 3.8em;
+		position: relative;
+	}
+
+	pre[class*="language-"].d2l-code.line-numbers > code {
+		position: relative;
+		white-space: inherit;
+	}
+
+	.d2l-code.line-numbers > code > .line-numbers-rows {
+		background-color: var(--d2l-code-line-numbers-background);
+		border-bottom-right-radius: 6px;
+		border-top-right-radius: 6px;
+		font-size: 100%;
+		left: -3.8em;
+		letter-spacing: -1px;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		width: 3em; /* works for line-numbers below 1000 lines */
+	}
+
+	.line-numbers-rows > span {
+		counter-increment: linenumber;
+		display: block;
+	}
+
+	.line-numbers-rows > span::before {
+		color: var(--d2l-code-line-numbers);
+		content: counter(linenumber);
+		display: block;
+		padding-right: 0.8em;
+		text-align: right;
+	}
+
+	span.inline-color-wrapper {
+		/*
+		 * <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2">
+		 *     <path fill="gray" d="M0 0h2v2H0z"/>
+		 *     <path fill="white" d="M0 0h1v1H0zM1 1h1v1H1z"/>
+		 * </svg>
+		 */
+		background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDIiPgoJPHBhdGggZmlsbD0iZ3JheSIgZD0iTTAgMGgydjJIMHoiLz4KCTxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMCAwaDF2MUgwek0xIDFoMXYxSDF6Ii8+Cjwvc3ZnPg==");
+		/* Prevent visual glitches where one pixel from the repeating pattern could be seen */
+		background-position: center;
+		background-size: 110%;
+		border: 1px solid white;
+		border-radius: 2px;
+		box-sizing: border-box;
+		display: inline-block;
+		height: 1.333ch;
+		margin: 0 0.333ch;
+		outline: 1px solid rgba(0, 0, 0, 0.5);
+		overflow: hidden;
+		width: 1.333ch;
+	}
+
+	span.inline-color {
+		display: block;
+		/* Prevent visual glitches again */
+		height: 120%;
+		width: 120%;
+	}
+</style><style class="darkreader darkreader--sync" media="screen"></style><script async="" src="quiz10_files/prism-bash.min.js"></script><script async="" src="quiz10_files/prism-line-numbers.min.js"></script></head>
+	<body id="d2l_body" onunload="d2l_Onunload();" onload="d2l_Onload();" class="vui-typography d2l-typography daylight">
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WG74PFK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><header><nav class="d2l-navigation-s d2l-branding-navigation-dark-foreground-color d2l-navigation-s-linkarea-no-color"><d2l-labs-navigation-band></d2l-labs-navigation-band></nav></header><div class="d2l-page-message-container"><div class="d2l-page-message d2l-hidden d2l_1_1_212" id="d2l_sessionExpiryWarning"><div style="display:none;" id="d2l_sessionExpiryAlert" role="alert"><div class="d2l-container-icon d2l_1_2_610 d2l_1_3_425">
+			<div class="d2l-container-icon-inner d2l_1_4_508 d2l_1_5_528 d2l_1_6_995 d2l_1_7_55">
+				<h2 class="d2l-heading vui-heading-2">Are You Still There?</h2>
+				<div class="d2l-textblock">Your session expires after 181 minutes of
+ inactivity, which protects your information in case you've left your 
+device without logging out.<br>
+<br>
+<strong>Hit a key or click anywhere to stay logged in.</strong></div>
+			</div>
+		</div>
+		</div><div style="display:none;" id="d2l_sessionExpiryCheck" role="alert"><div class="d2l-container-icon d2l_1_2_610 d2l_1_3_425">
+			<div class="d2l-container-icon-inner d2l_1_8_146 d2l_1_5_528 d2l_1_6_995 d2l_1_7_55">
+				<div class="d2l_1_9_263">
+					<h2 class="d2l-heading vui-heading-2 d2l-heading-none">Oh, There You Are!</h2>
+				</div>
+			</div>
+		</div>
+		</div></div>
+		</div>
+		<div id="d_content" class="d2l-page-main d2l-max-width d2l-min-width" role="main">
+		<div id="d_content_inner" class="d2l-page-main-padding"><div id="z_cd" class="d_ma"></div>
+		<div id="d_page_header" class="d2l-page-header"><div class="d2l-tool-actions d2l-left"><div class="d2l-heading dsr"><h1 id="d_page_title" class="d2l-heading-title"><span class="vui-heading-1">Jack Anderson</span></h1>
+		</div></div><span class="d2l-clear"></span></div><div id="d_content_r_c1">
+				<div id="d_content_r_c2">
+					<div id="d_content_r">
+						<div id="d_content_r_p">
+							<form method="post" action="quiz_submissions_attempt.d2l?isprv=&amp;qi=387318&amp;ai=6790110&amp;isInPopup=0&amp;cfql=0&amp;fromQB=0&amp;fromSubmissionsList=1&amp;ou=762262" id="d2l_form" enctype="multipart/form-data" onreset="return false;" onsubmit="return false;">
+								<div>
+									<input type="hidden" name="d2l_action" value="">
+									<input type="hidden" name="d2l_actionparam" value="">
+									<input type="hidden" name="d2l_hitCode" value="-2123006115325572101">
+									<input type="hidden" name="d2l_rf" value="">
+									<input type="hidden" name="d2l_controlMapPrev" value="">
+<input type="hidden" name="z_a" id="z_a"><div class="dco revamped small-gap pt-11" id="z_c"><div class="dco_c"><div class="dco margin-auto  revamped-header"><div class="dco_c"><div class="dco title"><div class="dco_c"><h2 class="dhdg_1 vui-heading-2" id="z_d">Quiz 10 - networking - Results</h2></div></div><div class="dco close"><div class="dco_c"><d2l-button-icon icon="tier1:close-large-thick" id="z_e" onclick='D2L.O("__gctl_2",0)();' text="Close this Quiz" animation-type="opacity-transform" type="button"></d2l-button-icon>
+							</div></div></div></div><div class="dco revamped-inner margin-auto small-gap"><div class="dco_c"><div class="dco revamped-inner margin-auto small-gap" id="z_f"><div class="dco_c"><div class="dco info text-center"><div class="dco_c"><div class="dco"><div class="dco_c"><h2 class="dhdg_2 vui-heading-3" id="z_g">Attempt 1 of 2</h2><div class="dco d2l-body-standard"><div class="dco_c"><label id="z_h">Written Apr 22, 2026 6:07 PM - Apr 22, 2026 6:24 PM</label></div></div></div></div></div></div></div></div><div class="dco revamped-inner margin-auto small-gap" id="z_i"><div class="dco_c"><div class="dco message d2l-body-standard" id="z_j"><div class="dco_c"><div id="z_k" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="RTXT_revampedMessage"><d2l-html-block html="Your quiz has been submitted successfully." inline=""></d2l-html-block></div></div></div></div><div class="dco score d2l-body-standard"><div class="dco_c"><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tr d_tm d_tn" style="width:100%;"><label style="margin-right:6px;">Attempt Score</label></td><td class="d_tl d_tm d_tn" style="width:100%;"><div class="dco d2l-grades-score" id="z_m"><div class="dco_c"><div class="dco" id="z_r" style="float:left;margin-top:0.2em;margin-right:0.5em;width:18px;height:18px;"><div class="dco_c" style="border-radius: 6px; background-color: rgb(232, 248, 255); --darkreader-inline-bgcolor: var(--darkreader-background-e8f8ff, #002d41);" data-darkreader-inline-bgcolor=""><div class="dco" style="width:18px;height:18px;"><div class="dco_c"></div></div></div></div><label id="z_s">14</label><label id="z_t"> / </label><label id="z_u">14</label><label id="z_v"> - </label><label id="z_w">100 %</label></div></div></td></tr><tr><td class="d_tr d_tm d_tn"><label style="margin-right:6px;">Overall Grade (Highest Attempt)</label></td><td class="d_tl d_tm d_tn"><div class="dco d2l-grades-score" id="z_y"><div class="dco_c"><div class="dco" id="z_bd" style="float:left;margin-top:0.2em;margin-right:0.5em;width:18px;height:18px;"><div class="dco_c" style="border-radius: 6px; background-color: rgb(232, 248, 255); --darkreader-inline-bgcolor: var(--darkreader-background-e8f8ff, #002d41);" data-darkreader-inline-bgcolor=""><div class="dco" style="width:18px;height:18px;"><div class="dco_c"></div></div></div></div><label id="z_be">14</label><label id="z_bf"> / </label><label id="z_bg">14</label><label id="z_bh"> - </label><label id="z_bi">100 %</label></div></div></td></tr></tbody></table></div></div><div class="dco" id="z_bj"><div class="dco_c"><div class="dco footer small-gap"><div class="dco_c"><div class="dco" id="z_bk"><div class="dco_c"><div style="text-align:left;width:100%;margin-top:3.8em;margin-bottom:0.9em;"><div style="text-align: left; margin: 0px 0px 10px;"><div id="z_bl" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="RTXT_14746054"><d2l-html-block html="" inline=""></d2l-html-block></div></div></div></div><div style="text-align:left;"></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q1" name="Q1"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 1</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_11"><d2l-html-block html="&lt;p&gt;Translate 00100100 to base 10&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><table summary="" class="d_t"><tbody><tr><td class="d_tl d_tm d_tn"><label>Answer:</label></td><td class="d_tl d_tm d_tw"><label>36</label></td><td class="d_tl d_tm d_tw"></td></tr></tbody></table></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q2" name="Q2"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 2</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_16"><d2l-html-block html="&lt;p&gt;Write the number 175 in 8 binary bits.&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><table summary="" class="d_t"><tbody><tr><td class="d_tl d_tm d_tn"><label>Answer:</label></td><td class="d_tl d_tm d_tw"><label>10101111</label></td><td class="d_tl d_tm d_tw"></td></tr></tbody></table></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q3" name="Q3"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 3</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_21"><d2l-html-block html="&lt;p&gt;Match the IPv4 addresses with the CIDR notation subnet masks with both their long form subnet mask and with their IPv4 address ranges&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tl d_tm d_tn"><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">5</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_26"><d2l-html-block html="&lt;p&gt;192.168.86.24 (only one IP is on the subnet)&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">3</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_30"><d2l-html-block html="&lt;p&gt;192.168.0.0 - 192.168.255.255&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">4</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_34"><d2l-html-block html="&lt;p&gt;192.168.86.0 - 192.168.86.255&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">1</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_38"><d2l-html-block html="&lt;p&gt;0.0.0.0&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">3</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_42"><d2l-html-block html="&lt;p&gt;255.255.0.0&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">1</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_46"><d2l-html-block html="&lt;p&gt;0.0.0.0 - 255.255.255.255 (all IPs are hosts)&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">2</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_50"><d2l-html-block html="&lt;p&gt;192.0.0.0 - 192.255.255.255&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">2</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_54"><d2l-html-block html="&lt;p&gt;255.0.0.0&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">5</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_58"><d2l-html-block html="&lt;p&gt;255.255.255.255&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">4</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_62"><d2l-html-block html="&lt;p&gt;255.255.255.0&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr></tbody></table></td><td class="d_tl d_tm d_tn"><label> </label></td><td class="d_tl d_tm d_tn" style="width:50%;"><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tl d_tm d_tn"><label><strong>1</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_68"><d2l-html-block html="&lt;p&gt;192.168.86.24/0&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>2</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_72"><d2l-html-block html="&lt;p&gt;192.168.86.24/8&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>3</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_76"><d2l-html-block html="&lt;p&gt;192.168.86.24/16&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>4</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_80"><d2l-html-block html="&lt;p&gt;192.168.86.24/24&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>5</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_84"><d2l-html-block html="&lt;p&gt;192.168.86.24/32&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr></tbody></table></td></tr></tbody></table></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q4" name="Q4"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 4</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_86"><d2l-html-block html="&lt;p&gt;172.198.210.15 is a valid IPv4 address&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><fieldset class="dfs_m block_disp" style="width:100%"><legend class="dfs_l rs_skip dsr"><span>Question options:</span></legend><div class="dfs_c"><table summary="" class="d_t" style="width:100%;"><tbody><tr class="d2l-rowshadeonhover-selected-static"><td class="d_tl d_tm d_tn"><div class="dco d2l-qc-controls-container"><div class="dco_c"><span class="di_s"><img src="quiz10_files/QuestionCollection.Main.radioChecked.svg" class="di_i" alt="Selected" title="Selected" style="width:24px;height:24px;" id="z_bm"></span></div></div></td><td class="d_tl d_tb d_tw" style="width:100%;"><label id="z_bn" for="tAtom2489395_2792110_9882125_id">True</label></td></tr><tr><td class="d_tl d_tm d_tn"><div class="dco d2l-qc-controls-container"><div class="dco_c"><span class="di_s"><img src="quiz10_files/QuestionCollection.Main.radioUnchecked.svg" class="di_i" alt="Unselected" title="Unselected" style="width:24px;height:24px;" id="z_bo"></span></div></div></td><td class="d_tl d_tb d_tw" style="width:100%;"><label id="z_bp" for="tAtom2489395_2792110_9882126_id">False</label></td></tr></tbody></table></div></fieldset></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q5" name="Q5"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 5</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_94"><d2l-html-block html="&lt;p&gt;31.899.233.90 is a valid IPv4 address&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><fieldset class="dfs_m block_disp" style="width:100%"><legend class="dfs_l rs_skip dsr"><span>Question options:</span></legend><div class="dfs_c"><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tl d_tm d_tn"><div class="dco d2l-qc-controls-container"><div class="dco_c"><span class="di_s"><img src="quiz10_files/QuestionCollection.Main.radioUnchecked.svg" class="di_i" alt="Unselected" title="Unselected" style="width:24px;height:24px;" id="z_bq"></span></div></div></td><td class="d_tl d_tb d_tw" style="width:100%;"><label id="z_br" for="tAtom2489394_2792111_9882127_id">True</label></td></tr><tr class="d2l-rowshadeonhover-selected-static"><td class="d_tl d_tm d_tn"><div class="dco d2l-qc-controls-container"><div class="dco_c"><span class="di_s"><img src="quiz10_files/QuestionCollection.Main.radioChecked.svg" class="di_i" alt="Selected" title="Selected" style="width:24px;height:24px;" id="z_bs"></span></div></div></td><td class="d_tl d_tb d_tw" style="width:100%;"><label id="z_bt" for="tAtom2489394_2792111_9882128_id">False</label></td></tr></tbody></table></div></fieldset></div><div style="text-align:left;width:100%;margin-top:3.8em;margin-bottom:0.9em;"><div style="text-align:left;margin:0.5em 0em 0.9em 0em;"><div id="z_bu" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="RTXT_14746056"><d2l-html-block html="" inline=""></d2l-html-block></div></div></div></div><div style="text-align:left;"></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q6" name="Q6"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 6</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_103"><d2l-html-block html="&lt;p&gt;Match the networking concepts to their definitions&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tl d_tm d_tn"><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">5</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_108"><d2l-html-block html="&lt;p&gt;A set of rules governing the exchange of data between devices.&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">6</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_112"><d2l-html-block html="&lt;p&gt;A unique hardware identifier assigned to a network interface controller (NIC).&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">2</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_116"><d2l-html-block html="&lt;p&gt;A numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">4</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_120"><d2l-html-block html="&lt;p&gt;A device or software component that connects different networks, allowing data to flow between them.&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">3</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_124"><d2l-html-block html="&lt;p&gt;A numerical value used to divide an IP address into network and host portions.&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">7</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_128"><d2l-html-block html="&lt;p&gt;A data structure that lists available routes to various destinations within a network.&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">1</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_132"><d2l-html-block html="&lt;p&gt;A system that translates domain names into IP addresses&amp;#160;&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr></tbody></table></td><td class="d_tl d_tm d_tn"><label> </label></td><td class="d_tl d_tm d_tn" style="width:50%;"><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tl d_tm d_tn"><label><strong>1</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_138"><d2l-html-block html="&lt;p&gt;DNS&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>2</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_142"><d2l-html-block html="&lt;p&gt;IP address&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>3</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_146"><d2l-html-block html="&lt;p&gt;Subnet mask&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>4</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_150"><d2l-html-block html="&lt;p&gt;Gateway&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>5</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_154"><d2l-html-block html="&lt;p&gt;Protocol&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>6</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_158"><d2l-html-block html="&lt;p&gt;MAC Address&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>7</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_162"><d2l-html-block html="&lt;p&gt;Route table&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr></tbody></table></td></tr></tbody></table></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q7" name="Q7"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 7</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_164"><d2l-html-block html="&lt;p&gt;Given this output from `ip a`:&lt;/p&gt;
+&lt;pre class=&quot;line-numbers d2l-code&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;2: eth0: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:32:2b:65 brd ff:ff:ff:ff:ff:ff
+    inet 172.26.112.240/20 brd 172.26.127.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fe32:2b65/64 scope link
+       valid_lft forever preferred_lft forever&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;What is the MAC address?&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><table summary="" class="d_t"><tbody><tr><td class="d_tl d_tm d_tn"><label>Answer:</label></td><td class="d_tl d_tm d_tw"><label>00:15:5d:32:2b:65</label></td><td class="d_tl d_tm d_tw"></td></tr></tbody></table></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q8" name="Q8"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 8</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_169"><d2l-html-block html="&lt;p&gt;Given this output from `ip a`:&lt;/p&gt;
+&lt;pre class=&quot;line-numbers d2l-code&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;2: eth0: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:32:2b:65 brd ff:ff:ff:ff:ff:ff
+    inet 172.26.118.11/24 brd 172.26.118.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fe32:2b65/64 scope link
+       valid_lft forever preferred_lft forever&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;What is the IPv4 address?&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><table summary="" class="d_t"><tbody><tr><td class="d_tl d_tm d_tn"><label>Answer:</label></td><td class="d_tl d_tm d_tw"><label>172.26.118.11</label></td><td class="d_tl d_tm d_tw"></td></tr></tbody></table></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q9" name="Q9"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 9</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_174"><d2l-html-block html="&lt;p&gt;Match the ports to the service protocol that commonly runs on them&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tl d_tm d_tn"><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">2</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_179"><d2l-html-block html="&lt;p&gt;HTTP&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">1</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_183"><d2l-html-block html="&lt;p&gt;SSH&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn" style="width:1%;"><label> __<span class="ds_d">3</span>__</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_187"><d2l-html-block html="&lt;p&gt;HTTPS&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr></tbody></table></td><td class="d_tl d_tm d_tn"><label> </label></td><td class="d_tl d_tm d_tn" style="width:50%;"><table summary="" class="d_t" style="width:100%;"><tbody><tr><td class="d_tl d_tm d_tn"><label><strong>1</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_193"><d2l-html-block html="&lt;p&gt;22&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>2</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_197"><d2l-html-block html="&lt;p&gt;80&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><label><strong>3</strong>.</label></td><td class="d_tl d_tm d_tw" style="width:100%;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_201"><d2l-html-block html="&lt;p&gt;443&lt;/p&gt;" inline=""></d2l-html-block></div></div></td></tr></tbody></table></td></tr></tbody></table></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q10" name="Q10"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 10</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_203"><d2l-html-block html="&lt;p&gt;Given this output from `ip a`:&lt;/p&gt;
+&lt;pre class=&quot;line-numbers d2l-code&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;2: eth0: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:32:2b:65 brd ff:ff:ff:ff:ff:ff
+    inet 172.26.118.11/24 brd 172.26.118.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fe32:2b65/64 scope link
+       valid_lft forever preferred_lft forever&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;What is the subnet mask for the CIDR notation?&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><table summary="" class="d_t"><tbody><tr><td class="d_tl d_tm d_tn"><label>Answer:</label></td><td class="d_tl d_tm d_tw"><label>255.255.255.0</label></td><td class="d_tl d_tm d_tw"></td></tr></tbody></table></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q11" name="Q11"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 11</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_208"><d2l-html-block html="&lt;p&gt;How can I find the public IPv4 address my network communication is utilizing?&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><div style="text-align:left;margin:0.5em;"><div id="" style="display: inline;"><div class="d2l-htmlblock-untrusted d2l-htmlblock-inline" id="ctl_210"><d2l-html-block html="either hostname -I or curl whatismyip.com (or another website that tells you)" inline=""></d2l-html-block></div></div></div></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q12" name="Q12"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 12</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_212"><d2l-html-block html="&lt;p&gt;Given this output from `ip a`:&lt;/p&gt;
+&lt;pre class=&quot;line-numbers d2l-code&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;2: eth0: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:32:2b:65 brd ff:ff:ff:ff:ff:ff
+    inet 172.26.118.11/24 brd 172.26.118.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fe32:2b65/64 scope link
+       valid_lft forever preferred_lft forever&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;What is the CIDR subnet mask?&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><table summary="" class="d_t"><tbody><tr><td class="d_tl d_tm d_tn"><label>Answer:</label></td><td class="d_tl d_tm d_tw"><label>24</label></td><td class="d_tl d_tm d_tw"></td></tr></tbody></table></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q13" name="Q13"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 13</strong></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_217"><d2l-html-block html="&lt;p&gt;What is the IPv4 address for &lt;a rel=&quot;noopener&quot; href=&quot;https://www.downloadmoreram.com&quot;&gt;www.downloadmoreram.com&lt;/a&gt; ?&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><table summary="" class="d_t"><tbody><tr><td class="d_tl d_tm d_tn"><label>Answer:</label></td><td class="d_tl d_tm d_tw"><label>172.67.193.114</label></td><td class="d_tl d_tm d_tw"></td></tr></tbody></table></div><div class="dco updated-submission-question-header"><div class="dco_c"><a id="Q14" name="Q14"></a><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"><label><strong>Question 14</strong></label><label> <span class="ds_i">(Bonus)</span></label></td>
+									<td class="dlay_m"></td>
+									<td class="dlay_r"></td>
+								</tr>
+							</tbody></table>
+							</div></div><div style="text-align:left;margin:0em 0em 0.9em 0.9em;"><div style="text-align:left;width:100%;margin-top:0.5em;margin-bottom:0.5em;"><div id=""><div class="" id="ctl_222"><d2l-html-block html="&lt;p&gt;[Bonus] Complete the AWS End of Course Feedback Survey (&amp;lt;5 minutes)&lt;br/&gt;&lt;br/&gt;Go to AWS, but don&amp;#39;t click Learner Lab.&amp;#160; Click &amp;quot;End of Course Feedback Survey&amp;quot; (near the bottom of the modules page).&lt;a rel=&quot;noopener&quot; href=&quot;https://awsacademy.instructure.com/courses/106943/modules&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once complete, answer &amp;quot;Yes&amp;quot; to this question.&lt;/p&gt;
+&lt;p&gt;(I can see who took it, so don&amp;#39;t lie)&lt;/p&gt;"></d2l-html-block></div></div><div style="text-align:left;margin-bottom:0.5em;"></div></div><fieldset class="dfs_m block_disp" style="width:100%"><legend class="dfs_l rs_skip dsr"><span>Question options:</span></legend><div class="dfs_c"><table summary="" class="d_t" style="width:100%;"><tbody><tr class="d2l-rowshadeonhover-selected-static"><td class="d_tl d_tm d_tn"><div class="dco d2l-qc-controls-container"><div class="dco_c"><span class="di_s"><img src="quiz10_files/QuestionCollection.Main.radioChecked.svg" class="di_i" alt="Selected" title="Selected" style="width:24px;height:24px;" id="z_bv"></span></div></div></td><td class="d_tl d_tb d_tw" style="width:100%;"><div class="dco d2l-quiz-answer-container"><div class="dco_c"><div id="z_bw"><label for="tAtom2356530_2992957_o2273_id"><div class="d2l-htmlblock-untrusted" id="lblAtom_2356530_2992957_o2273_id"><d2l-html-block html="&lt;p&gt;&lt;strong&gt;Yes&lt;/strong&gt; - I completed the survey&lt;/p&gt;"></d2l-html-block></div></label></div></div></div></td></tr><tr><td class="d_tl d_tm d_tn"><div class="dco d2l-qc-controls-container"><div class="dco_c"><span class="di_s"><img src="quiz10_files/QuestionCollection.Main.radioUnchecked.svg" class="di_i" alt="Unselected" title="Unselected" style="width:24px;height:24px;" id="z_bx"></span></div></div></td><td class="d_tl d_tb d_tw" style="width:100%;"><div class="dco d2l-quiz-answer-container"><div class="dco_c"><div id="z_by"><label for="tAtom2356530_2992957_o1228_id"><div class="d2l-htmlblock-untrusted" id="lblAtom_2356530_2992957_o1228_id"><d2l-html-block html="&lt;p&gt;Opting out, I did not take the survey.&lt;/p&gt;"></d2l-html-block></div></label></div></div></div></td></tr></tbody></table></div></fieldset></div></div></div><div class="dco" id="z_bz"><div class="dco_c"><button type="button" primary="" class="d2l-button" id="z_ca">Done</button></div></div></div></div></div></div></div></div></div></div></div></div><table cellspacing="0" cellpadding="0" style="width:100%" summary="">
+								<tbody><tr>
+									<td class="dlay_l"></td>
+								</tr>
+							</tbody></table>
+							<iframe id="LockDownBrowserLaunchFrame" class="dif" title="Respondus LockDown Browser" name="ctl_234" src="" data-contenttype="" align="middle" allow="microphone *; camera *" style="resize: none;" height="0" width="0" frameborder="0" scrolling="auto" onload="D2L.TransferFrameClicks( this );" tabindex="-1"></iframe>
+							<input type="hidden" name="LockDownBrowserUrl" value="0" id="z_cb"><input type="hidden" name="LockDownBrowserLaunchTimeout" value="5000" id="z_cc">
+							<input type="hidden" name="d2l_controlMap" value="[{&quot;hdn_cft&quot;:[&quot;z_a&quot;,&quot;Hidden&quot;,[],{},0,1],&quot;cms&quot;:[&quot;z_b&quot;,&quot;ContextMenuStructure&quot;,[[[[],&quot;summary&quot;,1,1,0,null,[0,0,0,&quot;Summary&quot;,&quot;&quot;,[]],&quot;return false;&quot;],[[],&quot;reports&quot;,1,1,0,null,[0,0,0,&quot;Reports&quot;,&quot;&quot;,[]],&quot;return false;&quot;]],&quot;&quot;,&quot;387318&quot;,&quot;HandleItemClick&quot;,0,&quot;start&quot;],{},0,1],&quot;cnt_quizattemptinfo&quot;:[&quot;z_c&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;head_revampedheading&quot;:[&quot;z_d&quot;,&quot;Heading&quot;,[0,0,1],{},0,1],&quot;btn_revampedclose&quot;:[&quot;z_e&quot;,&quot;ButtonIcon&quot;,[],{},0,1],&quot;cnt_uppersubmissionarea&quot;:[&quot;z_f&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;head_revampedattemptnumber&quot;:[&quot;z_g&quot;,&quot;Heading&quot;,[0,0,1],{},0,1],&quot;lbl_revampedattemptstatus&quot;:[&quot;z_h&quot;,&quot;Label&quot;,[],{},0,1],&quot;cnt_lowersubmissionarea&quot;:[&quot;z_i&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;cnt_revampedmessage&quot;:[&quot;z_j&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;rtxt_revampedmessage&quot;:[&quot;z_k&quot;,&quot;RichText&quot;,[1,1,&quot;RTXT_revampedMessage&quot;],{},0,1],&quot;cms_scoredisplayoptions&quot;:[&quot;z_l&quot;,&quot;ContextMenuStructure&quot;,[[[[],&quot;&quot;,1,1,0,null,[0,0,0,&quot;Edit Display Settings&quot;,&quot;&quot;,[]],&quot;return false;&quot;]],&quot;&quot;,&quot;&quot;,&quot;&quot;,0,&quot;start&quot;],{},0,1],&quot;cnt_scoredisplay&quot;:[&quot;z_m&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;dg_score&quot;:[&quot;z_n&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;dg_separator&quot;:[&quot;z_o&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;dg_symbol&quot;:[&quot;z_p&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;dg_colour&quot;:[&quot;z_q&quot;,&quot;DisplayGroup&quot;,[1],{},0,1],&quot;cnt_dot&quot;:[&quot;z_r&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],6,1,0,0,&quot;&quot;],{},0,1],&quot;lblscore&quot;:[&quot;z_s&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_6&quot;:[&quot;z_t&quot;,&quot;&quot;,[],null,0,1],&quot;lbloutof&quot;:[&quot;z_u&quot;,&quot;Label&quot;,[],{},0,1],&quot;lblseparator&quot;:[&quot;z_v&quot;,&quot;Label&quot;,[],{},0,1],&quot;lblsymbol&quot;:[&quot;z_w&quot;,&quot;Label&quot;,[],{},0,1],&quot;ctl_9&quot;:[&quot;z_bf&quot;,&quot;&quot;,[],null,0,1],&quot;cnt_revampedattempt&quot;:[&quot;z_bj&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;rtxt_14746054&quot;:[&quot;z_bl&quot;,&quot;RichText&quot;,[1,1,&quot;RTXT_14746054&quot;],{},0,1],&quot;ctl_89&quot;:[&quot;z_bm&quot;,&quot;Image&quot;,[[&quot;0\/QuestionCollection.Main.radioChecked.svg&quot;,24],null,1,0,0,1,&quot;&quot;],{},1,1],&quot;ctl_92&quot;:[&quot;z_bo&quot;,&quot;Image&quot;,[[&quot;0\/QuestionCollection.Main.radioUnchecked.svg&quot;,24],null,1,0,0,1,&quot;&quot;],{},1,1],&quot;ctl_97&quot;:[&quot;z_bq&quot;,&quot;Image&quot;,[[&quot;0\/QuestionCollection.Main.radioUnchecked.svg&quot;,24],null,1,0,0,1,&quot;&quot;],{},1,1],&quot;ctl_100&quot;:[&quot;z_bs&quot;,&quot;Image&quot;,[[&quot;0\/QuestionCollection.Main.radioChecked.svg&quot;,24],null,1,0,0,1,&quot;&quot;],{},1,1],&quot;rtxt_14746056&quot;:[&quot;z_bu&quot;,&quot;RichText&quot;,[1,1,&quot;RTXT_14746056&quot;],{},0,1],&quot;ctl_225&quot;:[&quot;z_bv&quot;,&quot;Image&quot;,[[&quot;0\/QuestionCollection.Main.radioChecked.svg&quot;,24],null,1,0,0,1,&quot;&quot;],{},1,1],&quot;ctl_229&quot;:[&quot;z_bx&quot;,&quot;Image&quot;,[[&quot;0\/QuestionCollection.Main.radioUnchecked.svg&quot;,24],null,1,0,0,1,&quot;&quot;],{},1,1],&quot;cnt_revampedback&quot;:[&quot;z_bz&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1],&quot;ctl_232&quot;:[&quot;z_ca&quot;,&quot;Button&quot;,[&quot;ExitSubmissionAttempt();return false;&quot;],{},0,0],&quot;hid_lockdownbrowserurl&quot;:[&quot;z_cb&quot;,&quot;Hidden&quot;,[1],{},0,1],&quot;hid_lockdownbrowserlaunchtimeout&quot;:[&quot;z_cc&quot;,&quot;Hidden&quot;,[1],{},0,1],&quot;ctl_messagearea&quot;:[&quot;z_cd&quot;,&quot;MessageArea&quot;,[&quot;d_content_inner&quot;,null,0,[],null],{},0,0]},{&quot;cms_scoredisplayoptions&quot;:{&quot;ctl_1&quot;:[&quot;z_x&quot;,&quot;ContextMenuStructure&quot;,[[[[],&quot;&quot;,1,1,0,null,[0,0,0,&quot;Edit Display Settings&quot;,&quot;&quot;,[]],&quot;return false;&quot;]],&quot;&quot;,&quot;&quot;,&quot;&quot;,0,&quot;start&quot;],{},0,1]},&quot;cnt_scoredisplay&quot;:{&quot;ctl_2&quot;:[&quot;z_y&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1]},&quot;dg_score&quot;:{&quot;ctl_3&quot;:[&quot;z_z&quot;,&quot;DisplayGroup&quot;,[1],{},0,1]},&quot;dg_separator&quot;:{&quot;ctl_4&quot;:[&quot;z_ba&quot;,&quot;DisplayGroup&quot;,[1],{},0,1]},&quot;dg_symbol&quot;:{&quot;ctl_5&quot;:[&quot;z_bb&quot;,&quot;DisplayGroup&quot;,[1],{},0,1]},&quot;dg_colour&quot;:{&quot;ctl_6&quot;:[&quot;z_bc&quot;,&quot;DisplayGroup&quot;,[1],{},0,1]},&quot;cnt_dot&quot;:{&quot;ctl_7&quot;:[&quot;z_bd&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],6,1,0,0,&quot;&quot;],{},0,1]},&quot;lblscore&quot;:{&quot;ctl_8&quot;:[&quot;z_be&quot;,&quot;Label&quot;,[],{},0,1]},&quot;lbloutof&quot;:{&quot;ctl_9&quot;:[&quot;z_bg&quot;,&quot;Label&quot;,[],{},0,1]},&quot;lblseparator&quot;:{&quot;ctl_10&quot;:[&quot;z_bh&quot;,&quot;Label&quot;,[],{},0,1]},&quot;lblsymbol&quot;:{&quot;ctl_11&quot;:[&quot;z_bi&quot;,&quot;Label&quot;,[],{},0,1]},&quot;cnt_revampedattempt&quot;:{&quot;ctl_12&quot;:[&quot;z_bk&quot;,&quot;Container&quot;,[0,1,1,[1,&quot;#999999&quot;,1],0,0,0,0,&quot;&quot;],{},0,1]},&quot;lblatom&quot;:{&quot;2489395_2792110_9882125_id&quot;:[&quot;z_bn&quot;,&quot;Label&quot;,[],{},0,1],&quot;2489395_2792110_9882126_id&quot;:[&quot;z_bp&quot;,&quot;Label&quot;,[],{},0,1],&quot;2489394_2792111_9882127_id&quot;:[&quot;z_br&quot;,&quot;Label&quot;,[],{},0,1],&quot;2489394_2792111_9882128_id&quot;:[&quot;z_bt&quot;,&quot;Label&quot;,[],{},0,1],&quot;2356530_2992957_o2273_id&quot;:[&quot;z_bw&quot;,&quot;RichText&quot;,[0,1,&quot;lblAtom_2356530_2992957_o2273_id&quot;],{},0,1],&quot;2356530_2992957_o1228_id&quot;:[&quot;z_by&quot;,&quot;RichText&quot;,[0,1,&quot;lblAtom_2356530_2992957_o1228_id&quot;],{},0,1]}}]">
+							<input type="hidden" name="d2l_state" value="[{&quot;3&quot;:[&quot;grid&quot;,&quot;pagesize&quot;,&quot;htmleditor&quot;,&quot;hpg&quot;],&quot;1&quot;:[&quot;gridpagenum&quot;,&quot;search&quot;,&quot;pagenum&quot;],&quot;2&quot;:[&quot;lcs&quot;,&quot;gsf&quot;,&quot;riosubmissionviewstate&quot;]},[]]">
+							<input type="hidden" name="d2l_referrer" value="5PYsKCY0oX5gDVB4D6Eu9P6GInrIyfLb">
+						</div>
+					</form>
+				</div></div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="clear"></div>
+<script>
+	UI.Init();
+	D2L.OR["__gctl_1"] = {};
+	D2L.OR["__gctl_1"]["0"]="{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.Init\",\"P\":[\"381404\",181,5,{\"_type\":\"id\",\"Value\":\"d2l_sessionExpiryWarning\"},\"d2l_sessionExpiryAlert\",\"d2l_sessionExpiryCheck\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/extend\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isLogout=0&isUsernamePasswordLogin=0&userId=381404\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isLogout=1&isUsernamePasswordLogin=0&userId=381404\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.ConfirmDialog\",\"P\":[null,{\"_type\":\"id\",\"Value\":\"d2l_1_0_217\"},\"New User Session\",\"\",\"The current user session has changed, so the links and content on this page may not behave as expected.\",\"OK\",\"\",true,false,false,true,false],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Confirm.Abort\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_217\"}]}]}";
+	D2L.O("__gctl_1",0)()
+	D2L.OR["__gctl_1"]["1"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"5PYsKCY0oX5gDVB4D6Eu9P6GInrIyfLb\",-2123006115]}";
+	D2L.O("__gctl_1",1)()
+	D2L.OR["__gctl_1"]["2"]="{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120]}";
+	D2L.O("__gctl_1",2)()
+	D2L.OR["__gctl_1"]["3"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}";
+	D2L.O("__gctl_1",3)()
+	D2L.OR["__gctl_1"]["4"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[0],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]+))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]+))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"M\/d\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-us\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2026,\"Month\":4,\"Day\":26,\"Hour\":15,\"Minute\":42,\"Second\":36,\"Millisecond\":923}}]}";
+	D2L.O("__gctl_1",4)()
+	D2L.OR["__gctl_1"]["5"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2flms%2fquizzing%2fuser%2fquiz_submissions_attempt.d2l%3fisprv%3d%26qi%3d387318%26ai%3d6790110%26isInPopup%3d0%26cfql%3d0%26fromQB%3d0%26fromSubmissionsList%3d1%26ou%3d762262&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"BSI\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Bsi.RpcReceiveJsPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}";
+	D2L.O("__gctl_1",5)()
+	D2L.OR["__gctl_1"]["6"]="{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/762262\/help\"}]}";
+	D2L.O("__gctl_1",6)()
+	D2L.OR["__gctl_2"] = {};
+	D2L.OR["__gctl_2"]["0"]="{\"_type\":\"func\",\"N\":\"D2L.JavaScriptFunctionOnClickAdapter\",\"P\":[\"ExitSubmissionAttempt();return false;\"]}";
+	D2L.OR["__gctl_233"] = {};
+	D2L.OR["__gctl_233"]["0"]="{\"_type\":\"func\",\"N\":\"D2L.JavaScriptFunctionOnClickAdapter\",\"P\":[\"\"]}";
+	var is_iOS9 = 'False';
+	ContentQuizImmersive()
+	FullyHideLockDownBrowserIFrameBySkippingTabIndex();
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+	StyleFirstSection('RTXT_14746054');
+
+</script>
+<script>D2L.LP.Web.UI.Html.Bsi.Init('prod', 'https://s.brightspace.com/lib/bsi/2026.4.226/', ['unbundled/button-icon.js','unbundled/html-block.js','unbundled/navigation-band.js']);</script>
+
+</body></html>

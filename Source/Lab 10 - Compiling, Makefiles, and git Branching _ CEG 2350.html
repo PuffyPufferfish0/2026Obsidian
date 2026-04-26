@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en-US" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen">*:not(pre, pre *, code, [aria-hidden="true"], [class*="fa-"], .fa, .fab, .fad, .fal, .far, .fas, .fass, .fasr, .fat, .icofont, [style*="font-"], [class*="icon"], [class*="Icon"], [class*="symbol"], [class*="Symbol"], .glyphicon, [class*="material-symbol"], [class*="material-icon"], mu, [class*="mu-"], .typcn, [class*="vjs-"]) {
+  -webkit-text-stroke: 0.4px !important;
+  text-stroke: 0.4px !important;
+}</style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container, div.mc-ip-hide[style*="background: rgb(255, 255, 255) !important"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lab 10 - Compiling, Makefiles, and git Branching | CEG 2350</title>
+<meta name="generator" content="Jekyll v3.10.0">
+<meta property="og:title" content="Lab 10 - Compiling, Makefiles, and git Branching">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Operating Systems Concepts &amp; Design">
+<meta property="og:description" content="Operating Systems Concepts &amp; Design">
+<link rel="canonical" href="https://pattonsgirl.github.io/CEG2350/Labs/Lab10/Instructions.html">
+<meta property="og:url" content="https://pattonsgirl.github.io/CEG2350/Labs/Lab10/Instructions.html">
+<meta property="og:site_name" content="CEG 2350">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Lab 10 - Compiling, Makefiles, and git Branching">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Operating Systems Concepts &amp; Design","headline":"Lab 10 - Compiling, Makefiles, and git Branching","url":"https://pattonsgirl.github.io/CEG2350/Labs/Lab10/Instructions.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="Lab%2010%20-%20Compiling,%20Makefiles,%20and%20git%20Branching%20_%20CEG%202350_files/style.css"><style class="darkreader darkreader--sync" media="screen"></style>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/CEG2350/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  <meta name="darkreader" content="f6a128c0687f4a9a8d7e7ff0e6d639ba"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select {
+    --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+.d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+    background: var(--darkreader-bg--d2l-color-mica) !important;
+}
+.d2l-le-TreeAccordionItem-anchor::before {
+    background: var(--darkreader-bg--d2l-color-corundum) !important;
+}
+table[class|="moz-header"] {
+    background: none;
+}
+*[style*="color: rgba(0,0,0,"],
+*[style*="color: rgba(0, 0, 0,"],
+*[style*="color:#000"],
+*[style*="color:black"],
+*[style*="color:#282828"],
+*[style*="color:#444"] {
+    color: var(--darkreader-neutral-text) !important;
+}
+*[style*="background:#fff"],
+*[style*="background-color:#fff"] {
+    background: var(--darkreader-neutral-background) !important;
+}
+*[bgcolor="#F5F5F5"],
+*[style*="background-color: #F5F5F5"] {
+    background: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+body[style*="background: rgb(255, 255, 255) !important"] *:not(a),
+.body[style*="background-color: rgb(254, 254, 254) !important"] *:not(a) {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+div[style*="www.gstatic.com/android/"] {
+    background: none !important;
+}
+*[style*="background:#f9f9f9"] {
+    background: var(--darkreader-background-f9f9f9, #1b1e1f) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></head>
+  <body>
+    <div class="wrapper">
+      <header>
+        
+
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350">Course Info / Syllabus</a></p>
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350/Labs">Labs</a></p>
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350/Topics">Lecture Topics</a></p>
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350/ExamReviews">Exam Reviews</a></p>
+        <p align="center"><a href="https://github.com/pattonsgirl/CEG2350/">Source Code &amp; Other Resources</a></p>
+
+        <hr>
+        
+        <p>Operating Systems Concepts &amp; Design</p>
+
+        
+      </header>
+      <section>
+
+      <h1 id="lab-10---compiling-makefiles-and-git-branching">Lab 10 - Compiling, Makefiles, and git Branching</h1>
+
+<ul>
+  <li><a href="#Lab-Procedure">Lab Procedure</a></li>
+  <li><a href="#part-0---issues--branches">Part 0 - Issues &amp; Branches</a></li>
+  <li><a href="#part-1---compilers">Part 1 - Common Compilers</a></li>
+  <li><a href="#part-2---compiling">Part 2 - Compiling</a></li>
+  <li><a href="#part-3---ignore-that">Part 3 - Ignore That</a></li>
+  <li><a href="#part-4---document">Part 4 - Document</a></li>
+  <li><a href="#part-5---makey-makey">Part 5 - <code class="language-plaintext highlighter-rouge">makey makey</code></a></li>
+  <li><a href="#part-6---citations--resources">Part 6 - Citations &amp; Resources</a></li>
+  <li><a href="#extra-credit---git-tools">Extra Credit - <code class="language-plaintext highlighter-rouge">git</code> tools</a></li>
+  <li><a href="#submission">Submission</a></li>
+  <li><a href="#rubric">Rubric</a></li>
+</ul>
+
+<h2 id="lab-procedure">Lab Procedure</h2>
+
+<p>Make sure to return to the AWS Learner Lab page (link in Pilot if you
+ forgot to bookmark it) and hit “Start Lab” to turn on your sandbox / 
+AWS instance.</p>
+
+<p>Use <code class="language-plaintext highlighter-rouge">ssh</code> to connect to your AWS Ubuntu instance.</p>
+
+<p>Go to the folder that contains your repository (likely named <code class="language-plaintext highlighter-rouge">ceg2350-yourgithubusername</code>).</p>
+
+<p>Create a new directory, <code class="language-plaintext highlighter-rouge">Lab10</code>.</p>
+
+<p>Create a file named <code class="language-plaintext highlighter-rouge">README.md</code> in the <code class="language-plaintext highlighter-rouge">Lab10</code> folder.  The <a href="https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab10/LabTemplate.md">Lab 10 Template can be copied from this link</a>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab10/LabTemplate.md</code></li>
+</ul>
+
+<p>You may refer to additional resources outside of the recommended resources provided.</p>
+
+<p>Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the <code class="language-plaintext highlighter-rouge">Citations</code>
+ section of your lab answers.  To add citations, provide the site and a 
+summary of what it assisted you with.  If generative AI was used, 
+include which generative AI system was used and what prompt(s) you fed 
+it.</p>
+
+<p>If you make mistakes with commands in the lab, note them!  Writing 
+down what went wrong and what the correction was will significantly help
+ your learning journey.  If you cannot find a correction, it will help 
+the TAs or myself understand what point you reached and determine some 
+potential solutions.</p>
+
+<h2 id="part-0---issues--branches">Part 0 - Issues &amp; Branches</h2>
+
+<p><strong>Useful <code class="language-plaintext highlighter-rouge">git</code> commands: <code class="language-plaintext highlighter-rouge">branch</code>, <code class="language-plaintext highlighter-rouge">switch</code>, <code class="language-plaintext highlighter-rouge">commit</code>, <code class="language-plaintext highlighter-rouge">push</code>, <code class="language-plaintext highlighter-rouge">merge</code></strong></p>
+
+<ol>
+  <li>To begin, create and add the Lab Template to your <code class="language-plaintext highlighter-rouge">main</code> branch in your <code class="language-plaintext highlighter-rouge">Lab10</code> folder</li>
+  <li>In your GitHub repository, go to the <code class="language-plaintext highlighter-rouge">Issues</code> tab.  Create an Issue <strong>for each part</strong> of this lab - you may do this all at once or as you start each part.</li>
+  <li>Through this lab, you will create <strong>one</strong> branch <strong>for each</strong> issue.</li>
+  <li>Merge the branch with the <code class="language-plaintext highlighter-rouge">main</code> branch as your <strong>complete each part</strong>.  You may then mark your issue as complete.</li>
+  <li>If you make <strong>adjustments after merging</strong> you need to create an Issue describing what needs correcting, then resolve the issue.</li>
+</ol>
+
+<p><strong>One merge</strong> must be completed via a <strong>Pull Request</strong> - all others should be done via branch merging on the command line.</p>
+
+<p>Let’s practice!</p>
+
+<ol>
+  <li>Create an Issue - title it <code class="language-plaintext highlighter-rouge">git guide - Part 0</code>.</li>
+  <li>Create a branch - on the branch, open your lab template file, fill in the <code class="language-plaintext highlighter-rouge">git</code> guide below.  Make <code class="language-plaintext highlighter-rouge">commit</code>s on the branch.</li>
+  <li><code class="language-plaintext highlighter-rouge">push</code> your changes to your <code class="language-plaintext highlighter-rouge">branch</code> - GitHub won’t know what branch you are talking about - read the output, it will help you do the next step to <code class="language-plaintext highlighter-rouge">push</code> your <code class="language-plaintext highlighter-rouge">branch</code> to GitHub!</li>
+  <li>Verify that you like the way the markdown turned out now that it’s been pushed to GitHub (make sure you are viewing the right <code class="language-plaintext highlighter-rouge">branch</code>!)</li>
+  <li><code class="language-plaintext highlighter-rouge">merge</code> your change from your branch to <code class="language-plaintext highlighter-rouge">main</code>.</li>
+  <li>Mark your issue as resolved!</li>
+  <li><strong>DO NOT DELETE YOUR BRANCHES.  DO NOT DELETE YOUR ISSUES</strong></li>
+</ol>
+
+<p>Fill out the <code class="language-plaintext highlighter-rouge">git</code>
+ guide table so you have a resource of useful commands you can refer to 
+throughout the lab!  The Notes column should have any “notes to self” 
+you want to leave behind - easy oopsies to make, double check something,
+ etc.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Command(s) / Steps</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Create a branch</strong></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><strong>Change to branch</strong></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><strong>Add branch to remote if created locally (GitHub)</strong></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><strong>Steps to <code class="language-plaintext highlighter-rouge">merge</code> changes from another branch to (<code class="language-plaintext highlighter-rouge">main</code>)</strong></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><strong>Steps to resolve a <code class="language-plaintext highlighter-rouge">merge</code> conflict</strong></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Resources</strong></p>
+<ul>
+  <li><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/quickstart">Quickstart for GitHub Issues - GitHub Docs</a></li>
+  <li><a href="https://git-scm.com/cheat-sheet">Git Cheat Sheet - git-scm</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Q1kHG842HoI&amp;ab_channel=SuperSimpleDev">(Video) SuperSimpleDev - Git Branching and Merging Tutorial</a></li>
+  <li><a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell">Git Branching - Branches in a Nutshell - git-scm</a></li>
+  <li><a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">Git Branching - Basic Branching and Merging - git-scm</a></li>
+  <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches">About branches - GitHub Docs</a></li>
+  <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository">Working with branches on GitHub - GitHub Docs</a></li>
+  <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">About Pull Requests - GitHub Docs</a></li>
+  <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">Creating a Pull Request - GitHub Docs</a></li>
+  <li><a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-pull-request-reviews-in-your-repository">Managing pull request reviews in your repository - GitHub Docs</a></li>
+  <li><a href="https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts">Git merge conflicts - Atlassian</a></li>
+</ul>
+
+<h2 id="part-1---compilers">Part 1 - Compilers</h2>
+
+<p><strong>Reminder</strong> - create an Issue for this part -&gt; 
+create a branch to work on this issue -&gt; make your commits to this 
+branch -&gt; verify your changes (no broken markdown, good spelling) 
+-&gt; merge to main. <strong>DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE</strong></p>
+
+<p>Fill out the following charts regarding the three most commonly used 
+languages - C/C++, Java, and Python.  The bonus is you’ll make a guide 
+for yourself on how to install these or how to check if they are already
+ available.  I’m going to give you the answers for C / C++ - you’ll need
+ to complete the chart for Java and Python.</p>
+
+<p><strong>Installing the compiler for different OSes</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Language</th>
+      <th>Compiler</th>
+      <th>Linux (Ubuntu/Debian)</th>
+      <th>macOS</th>
+      <th>Windows</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>C / C++</strong></td>
+      <td>GCC / G++</td>
+      <td><code class="language-plaintext highlighter-rouge">sudo apt install build-essential</code></td>
+      <td><code class="language-plaintext highlighter-rouge">xcode-select --install</code></td>
+      <td>Install <strong>MinGW</strong> via <a href="https://www.msys2.org/">MSYS2</a> <br>→ <code class="language-plaintext highlighter-rouge">pacman -S mingw-w64-x86_64-gcc</code></td>
+    </tr>
+    <tr>
+      <td><strong>Java</strong></td>
+      <td>OpenJDK</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><strong>Python</strong></td>
+      <td>Python</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Verifying install location &amp; verison</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Language</th>
+      <th>OS</th>
+      <th>Confirm Installation Command</th>
+      <th>Check Version Command</th>
+      <th>Expected Output Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>C (GCC)</strong></td>
+      <td>Linux</td>
+      <td><code class="language-plaintext highlighter-rouge">which gcc</code></td>
+      <td><code class="language-plaintext highlighter-rouge">gcc --version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">gcc (Ubuntu 13.2.0) 13.2.0</code></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>macOS</td>
+      <td><code class="language-plaintext highlighter-rouge">which gcc</code></td>
+      <td><code class="language-plaintext highlighter-rouge">gcc --version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Apple clang version 15.0.0 (clang-1500.0.40.1)</code></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Windows (MSYS2/MinGW)</td>
+      <td><code class="language-plaintext highlighter-rouge">where gcc</code></td>
+      <td><code class="language-plaintext highlighter-rouge">gcc --version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">gcc.exe (Rev10, Built by MSYS2 project) 13.2.0</code></td>
+    </tr>
+    <tr>
+      <td><strong>C++ (G++)</strong></td>
+      <td>Linux</td>
+      <td><code class="language-plaintext highlighter-rouge">which g++</code></td>
+      <td><code class="language-plaintext highlighter-rouge">g++ --version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">g++ (Ubuntu 13.2.0) 13.2.0</code></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>macOS</td>
+      <td><code class="language-plaintext highlighter-rouge">which clang++</code></td>
+      <td><code class="language-plaintext highlighter-rouge">clang++ --version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Apple clang version 15.0.0</code></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Windows</td>
+      <td><code class="language-plaintext highlighter-rouge">where g++</code></td>
+      <td><code class="language-plaintext highlighter-rouge">g++ --version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">g++.exe (Rev10, Built by MSYS2 project) 13.2.0</code></td>
+    </tr>
+    <tr>
+      <td><strong>Java (JDK)</strong></td>
+      <td>Linux</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>macOS</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Windows</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><strong>Python 3</strong></td>
+      <td>Linux</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>macOS</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Windows</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="part-2---compiling">Part 2 - <a href="https://xkcd.com/303/">Compiling</a></h2>
+
+<p><strong>Reminder</strong> - create an Issue for this part -&gt; 
+create a branch to work on this issue -&gt; make your commits to this 
+branch -&gt; verify your changes (no broken markdown, good spelling) 
+-&gt; merge to main. <strong>DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE</strong></p>
+
+<p><strong>Useful Commands: <code class="language-plaintext highlighter-rouge">gcc</code>, <code class="language-plaintext highlighter-rouge">g++</code>, <code class="language-plaintext highlighter-rouge">wget</code></strong></p>
+
+<ol>
+  <li>Select from either <a href="https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/todo-c.tar.gz">todo-c.tar.gz</a> or <a href="https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/todo-cpp.tar.gz">todo-cpp.tar.gz</a>. Download the chosen tar archive to your <code class="language-plaintext highlighter-rouge">Lab10</code> folder in your repository folder.</li>
+  <li>Extract the source code files from the <code class="language-plaintext highlighter-rouge">.tar.gz</code></li>
+  <li>Install the C / C++ compiler on your AWS instance.</li>
+  <li>Verify the installation of the C / C++ compiler on your AWS instance.
+    <ul>
+      <li>It is recommended to query for the version of the program to validate installation.</li>
+    </ul>
+  </li>
+  <li>Using your AWS instance, compile the source code into an executable program.</li>
+  <li>Using your AWS instance, run the executable program.</li>
+  <li>Add the original <code class="language-plaintext highlighter-rouge">.tar.gz</code> and the program source code files - <code class="language-plaintext highlighter-rouge">.c</code> or <code class="language-plaintext highlighter-rouge">.cpp</code> files - to your repository.  Do not add the compiled executable for tracking.</li>
+</ol>
+
+<p><strong>Resources:</strong></p>
+<ul>
+  <li><a href="https://linuxize.com/post/how-to-create-and-extract-archives-using-the-tar-command-in-linux/">Tar Command in Linux: Create and Extract Archives with Examples - Linuxize</a></li>
+  <li><a href="https://www.scaler.com/topics/c/compilation-process-in-c/">Compilation Process in C - Scaler</a></li>
+  <li><a href="http://www.cs.emory.edu/~cheung/Courses/255/Syllabus/1-C-intro/declare-func1b.html">Compiling With Multiple Source Files - Emory</a></li>
+</ul>
+
+<h2 id="part-3---ignore-that">Part 3 - Ignore That</h2>
+
+<p><strong>Reminder</strong> - create an Issue for this part -&gt; 
+create a branch to work on this issue -&gt; make your commits to this 
+branch -&gt; verify your changes (no broken markdown, good spelling) 
+-&gt; merge to main. <strong>DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE</strong></p>
+
+<p>In the root folder of your GitHub repository, create a <code class="language-plaintext highlighter-rouge">.gitignore</code> file and prevent tracking of your executable programs.</p>
+
+<p>If you already added your executable for tracking, remove it from future tracking with <code class="language-plaintext highlighter-rouge">git rm --cached &lt;file_name&gt;</code>, then <code class="language-plaintext highlighter-rouge">commit</code> &amp; <code class="language-plaintext highlighter-rouge">push</code> the change.</p>
+<ul>
+  <li>Just <code class="language-plaintext highlighter-rouge">git rm</code> would delete it from your working directory (“filesystem”) and from tracking.  The <code class="language-plaintext highlighter-rouge">--cached</code> flag remove it only from tracking.</li>
+</ul>
+
+<p>Resources:</p>
+<ul>
+  <li><a href="https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files">Ignoring files - GitHub Docs</a></li>
+  <li><a href="https://git-scm.com/docs/gitignore"><code class="language-plaintext highlighter-rouge">gitignore</code> Documentation - git-scm</a></li>
+  <li><a href="https://github.com/pattonsgirl/CEG2350/blob/main/.gitignore">Example <code class="language-plaintext highlighter-rouge">.gitignore</code> file</a></li>
+</ul>
+
+<h2 id="part-4---document">Part 4 - Document</h2>
+
+<p><strong>Reminder</strong> - create an Issue for this part -&gt; 
+create a branch to work on this issue -&gt; make your commits to this 
+branch -&gt; verify your changes (no broken markdown, good spelling) 
+-&gt; merge to main. <strong>DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE</strong></p>
+
+<p>Using the source code you downloaded and the program you compiled in Part 2:</p>
+
+<ol>
+  <li>Fill in the User Guide section with a user guide for the program. 
+ Provide clear and concise instructions on what the program is (its 
+purpose), how to build and run it, and how to use the program.</li>
+  <li>For all functions in the <code class="language-plaintext highlighter-rouge">.c</code> or <code class="language-plaintext highlighter-rouge">.cpp</code> files, add a comment block that includes the following:
+    <ul>
+      <li>What function does</li>
+      <li>What its parameter values are</li>
+      <li>what values it returns (if a function returns one type of 
+value usually, and another value to indicate an error, your comment 
+should describe both of these types of return values).</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Example of best practice formatting - do this for each function in your <code class="language-plaintext highlighter-rouge">.c</code> or <code class="language-plaintext highlighter-rouge">.cpp</code> files:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*
+ * Function:  approx_pi 
+ * --------------------
+ * computes an approximation of pi using:
+ *    pi/6 = 1/2 + (1/2 x 3/4) 1/5 (1/2)^3  + (1/2 x 3/4 x 5/6) 1/7 (1/2)^5 +
+ *
+ *  n: number of terms in the series to sum
+ *
+ *  returns: the approximate value of pi obtained by summing the first n terms
+ *           in the above series
+ *           returns zero on error (if n is non-positive)
+ */</span>
+
+<span class="kt">double</span> <span class="nf">approx_pi</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Test that the program still compiles and the resulting executable still works as expected.</li>
+</ol>
+
+<h2 id="part-5---makey-makey">Part 5 - <a href="https://www.youtube.com/watch?v=X1mYalegtdI&amp;ab_channel=MakeyMakey"><code class="language-plaintext highlighter-rouge">makey makey</code></a></h2>
+
+<p><strong>Reminder</strong> - create an Issue for this part -&gt; 
+create a branch to work on this issue -&gt; make your commits to this 
+branch -&gt; verify your changes (no broken markdown, good spelling) 
+-&gt; merge to main. <strong>DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE</strong></p>
+
+<p><strong>Useful commands: <code class="language-plaintext highlighter-rouge">make</code></strong></p>
+
+<p>Write a <code class="language-plaintext highlighter-rouge">Makefile</code> for the source code file you downloaded in Part 2.</p>
+
+<p><strong>Make a commit after creating (and testing the operation of) each target</strong></p>
+
+<p>At minimum, craft the following targets:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">build</code>
+    <ul>
+      <li>depends on source code files</li>
+      <li>builds an executable from the source code</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">run</code>
+    <ul>
+      <li>depends on the executable with name defined above</li>
+      <li>executes (runs) the executable</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">clean</code>
+    <ul>
+      <li>removes the executable</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Test the targets in your <code class="language-plaintext highlighter-rouge">Makefile</code>.</p>
+
+<p>Create a set of instructions for using your <code class="language-plaintext highlighter-rouge">Makefile</code> to perform its different taskings.</p>
+
+<p><strong>Resources:</strong></p>
+<ul>
+  <li><a href="https://github.com/pattonsgirl/CEG2350/blob/main/code/Makefile"><code class="language-plaintext highlighter-rouge">Makefile</code> example</a>
+    <ul>
+      <li>See slide deck for explanation and use to use <code class="language-plaintext highlighter-rouge">make</code> to call targets</li>
+    </ul>
+  </li>
+  <li><a href="https://www.redswitches.com/blog/make-command-in-linux/"><code class="language-plaintext highlighter-rouge">make</code> command in Linux - Redswitches</a></li>
+  <li><a href="https://ioflood.com/blog/make-linux-command/"><code class="language-plaintext highlighter-rouge">make</code> command - IOFlood</a>
+    <ul>
+      <li>Includes CMake and AutoTools, which are out of scope for course but good to note.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="part-6---resources--citations">Part 6 - Resources &amp; Citations</h2>
+
+<p>Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the <code class="language-plaintext highlighter-rouge">Citations / Resources</code>
+ section of your lab answers. You may refer to your own notes (if they 
+are digitized into GitHub), course notes, or external resources / 
+websites.</p>
+
+<p>To add citations / resources, provide the reference / link and a summary of what it assisted you with.</p>
+
+<p>If generative AI was used, include which generative AI system was 
+used, what prompt(s) you fed it, and a summary of what it assisted you 
+with.</p>
+
+<p>We expect a minimum of <strong>one citation / useful resource per part</strong> of your lab. So this lab would require a resource for:</p>
+<ul>
+  <li>git branches</li>
+  <li>setting up using the .gitignore file</li>
+  <li>create and extract tar archives</li>
+  <li>using the C/C++ or Java compiler on the command line</li>
+  <li>creating and using a Makefile</li>
+</ul>
+
+<h2 id="extra-credit---git-tools">Extra Credit - <code class="language-plaintext highlighter-rouge">git</code> tools</h2>
+
+<p><strong>Reminder</strong> - create an Issue for this part -&gt; 
+create a branch to work on this issue -&gt; make your commits to this 
+branch -&gt; verify your changes (no broken markdown, good spelling) 
+-&gt; merge to main. <strong>DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE</strong></p>
+
+<p>Choose one of the below CLI git tools:</p>
+<ul>
+  <li><a href="https://github.com/a3chron/gith">gith - TUI tool</a></li>
+  <li><a href="https://github.com/jesseduffield/lazygit">lazygit - TUI tool</a></li>
+  <li><a href="https://github.com/tpope/vim-fugitive">fugitive - git for vim</a></li>
+  <li><a href="https://github.com/cli/cli#installation">gh - GitHub CLI Tool</a> - its <a href="https://cli.github.com/manual/"><code class="language-plaintext highlighter-rouge">manual</code> is here</a>
+    <ul>
+      <li>demo would need to show “advanced use” - such as issue generation or PR interaction</li>
+    </ul>
+  </li>
+  <li>We are open to other <code class="language-plaintext highlighter-rouge">git</code>
+ workflow improvement tools - TA / instructor approval is required, and 
+the tool must be more than a visualizer (there are a lot of <code class="language-plaintext highlighter-rouge">git</code> <code class="language-plaintext highlighter-rouge">log</code> visualizers out there - this ec is for something to assist with <code class="language-plaintext highlighter-rouge">git</code> usage)</li>
+</ul>
+
+<p>Install it to your CLI / enable it in a tool, than add instructions to your Lab Template and show proof of what it can do!</p>
+
+<h2 id="submission">Submission</h2>
+
+<p>The TAs will be checking your repository for Issues (open &amp; closed), branches, and commit history.</p>
+
+<ol>
+  <li>
+    <p>Verify that your GitHub repo has a <code class="language-plaintext highlighter-rouge">Lab10</code> folder with at minimum:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">README.md</code></li>
+      <li>compressed archive of source code files</li>
+      <li>source code files</li>
+      <li><code class="language-plaintext highlighter-rouge">Makefile</code></li>
+      <li><code class="language-plaintext highlighter-rouge">.gitignore</code> file <em>in the root directory of your repository</em></li>
+    </ul>
+  </li>
+  <li>
+    <p>In the Pilot Dropbox, paste the URL to the <code class="language-plaintext highlighter-rouge">Lab10</code> folder in your GitHub repo</p>
+    <ul>
+      <li>URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab10</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="rubric">Rubric</h2>
+
+<p>Your files should be cleanly presented in your GitHub repository.  
+Citations should be included as needed.  Include which generative AI 
+system was used and what prompts were used if generative AI was used.</p>
+
+<p><a href="https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab10/Rubric.md">Rubric</a></p>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/pattonsgirl">pattonsgirl</a></p>
+        
+        <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/pages-themes/dinky">Dinky</a></small></p>
+      </footer>
+    </div>
+    <script src="Lab%2010%20-%20Compiling,%20Makefiles,%20and%20git%20Branching%20_%20CEG%202350_files/scale.fix.js"></script>
+  
+
+</body></html>

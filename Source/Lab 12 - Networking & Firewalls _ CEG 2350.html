@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en-US" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen">*:not(pre, pre *, code, [aria-hidden="true"], [class*="fa-"], .fa, .fab, .fad, .fal, .far, .fas, .fass, .fasr, .fat, .icofont, [style*="font-"], [class*="icon"], [class*="Icon"], [class*="symbol"], [class*="Symbol"], .glyphicon, [class*="material-symbol"], [class*="material-icon"], mu, [class*="mu-"], .typcn, [class*="vjs-"]) {
+  -webkit-text-stroke: 0.4px !important;
+  text-stroke: 0.4px !important;
+}</style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container, div.mc-ip-hide[style*="background: rgb(255, 255, 255) !important"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lab 12 - Networking &amp; Firewalls | CEG 2350</title>
+<meta name="generator" content="Jekyll v3.10.0">
+<meta property="og:title" content="Lab 12 - Networking &amp; Firewalls">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Operating Systems Concepts &amp; Design">
+<meta property="og:description" content="Operating Systems Concepts &amp; Design">
+<link rel="canonical" href="https://pattonsgirl.github.io/CEG2350/Labs/Lab12/Instructions.html">
+<meta property="og:url" content="https://pattonsgirl.github.io/CEG2350/Labs/Lab12/Instructions.html">
+<meta property="og:site_name" content="CEG 2350">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Lab 12 - Networking &amp; Firewalls">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Operating Systems Concepts &amp; Design","headline":"Lab 12 - Networking &amp; Firewalls","url":"https://pattonsgirl.github.io/CEG2350/Labs/Lab12/Instructions.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="Lab%2012%20-%20Networking%20&amp;%20Firewalls%20_%20CEG%202350_files/style.css"><style class="darkreader darkreader--sync" media="screen"></style>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/CEG2350/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  <meta name="darkreader" content="feafc94f753449a6b120866a62e46427"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select {
+    --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+.d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+    background: var(--darkreader-bg--d2l-color-mica) !important;
+}
+.d2l-le-TreeAccordionItem-anchor::before {
+    background: var(--darkreader-bg--d2l-color-corundum) !important;
+}
+table[class|="moz-header"] {
+    background: none;
+}
+*[style*="color: rgba(0,0,0,"],
+*[style*="color: rgba(0, 0, 0,"],
+*[style*="color:#000"],
+*[style*="color:black"],
+*[style*="color:#282828"],
+*[style*="color:#444"] {
+    color: var(--darkreader-neutral-text) !important;
+}
+*[style*="background:#fff"],
+*[style*="background-color:#fff"] {
+    background: var(--darkreader-neutral-background) !important;
+}
+*[bgcolor="#F5F5F5"],
+*[style*="background-color: #F5F5F5"] {
+    background: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+body[style*="background: rgb(255, 255, 255) !important"] *:not(a),
+.body[style*="background-color: rgb(254, 254, 254) !important"] *:not(a) {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+div[style*="www.gstatic.com/android/"] {
+    background: none !important;
+}
+*[style*="background:#f9f9f9"] {
+    background: var(--darkreader-background-f9f9f9, #1b1e1f) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></head>
+  <body>
+    <div class="wrapper">
+      <header>
+        
+
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350">Course Info / Syllabus</a></p>
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350/Labs">Labs</a></p>
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350/Topics">Lecture Topics</a></p>
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350/ExamReviews">Exam Reviews</a></p>
+        <p align="center"><a href="https://github.com/pattonsgirl/CEG2350/">Source Code &amp; Other Resources</a></p>
+
+        <hr>
+        
+        <p>Operating Systems Concepts &amp; Design</p>
+
+        
+      </header>
+      <section>
+
+      <h1 id="lab-12---networking--firewalls">Lab 12 - Networking &amp; Firewalls</h1>
+
+<ul>
+  <li><a href="#lab-procedure">Lab Procedure</a></li>
+  <li><a href="#part-1---networking-basics">Part 1 - Networking Basics</a></li>
+  <li><a href="#part-2---socket-programming">Part 2 - Socket Programming</a></li>
+  <li><a href="#part-3---security">Part 3 - Security</a></li>
+  <li><a href="#part-4---server-testing">Part 4 - Server Testing</a></li>
+  <li><a href="#part-5---citations--resources">Part 5 - Citations / Resources</a></li>
+  <li><a href="#extra-credit---tattle-tale">Extra Credit - Tattle Tale</a></li>
+  <li><a href="#submission">Submission</a></li>
+  <li><a href="#rubric">Rubric</a></li>
+  <li><a href="#resources">Resources</a></li>
+</ul>
+
+<h2 id="lab-procedure">Lab Procedure</h2>
+
+<p>Make sure to return to the AWS Learner Lab page (link in Pilot if you
+ forgot to bookmark it) and hit “Start Lab” to turn on your sandbox / 
+AWS instance.</p>
+
+<p>Use <code class="language-plaintext highlighter-rouge">ssh</code> to connect to your AWS Ubuntu instance.</p>
+
+<p>Go to the folder that contains your repository (likely named <code class="language-plaintext highlighter-rouge">ceg2350-yourgithubusername</code>).</p>
+
+<p>Create a new directory, <code class="language-plaintext highlighter-rouge">Lab12</code>.</p>
+
+<p>Create a file named <code class="language-plaintext highlighter-rouge">README.md</code> in the <code class="language-plaintext highlighter-rouge">Lab12</code> folder. The <a href="https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/LabTemplate.md">Lab 12 Template can be copied from this link</a>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/LabTemplate.md</code></li>
+</ul>
+
+<p>You may refer to additional resources outside of the recommended ones
+ provided. Cite any resource that contributes to your understanding in 
+the <code class="language-plaintext highlighter-rouge">Citations</code> 
+section of your lab answers, including the site and a summary of its 
+assistance. If generative AI was used, include the system and prompts.</p>
+
+<p>If you make mistakes with commands, note them! Writing down what went
+ wrong and the correction will help your learning. If stuck, this aids 
+TAs in understanding where you may have misunderstood or misconfigured a
+ core step.</p>
+
+<h2 id="part-1---networking-basics">Part 1 - Networking Basics</h2>
+
+<h3 id="linux-network-command-cheat-sheet">Linux Network Command Cheat Sheet</h3>
+
+<p>The commands below are essential for gathering network information or network testing. Provide a brief statement / summary (<strong>not a multi-paragraph copy paste</strong>) about what each command does <strong>and</strong> find an internet resource that provides a basic guide to what the command does and examples of usage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+      <th>Resource</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hostname</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ipconfig</code> (Powershell)</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ifconfig</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ip a</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">route</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">iptables -L</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Invoke-RestMethod ifconfig.me</code> (Powershell)</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">curl &lt;IP_or_hostname&gt;</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">curl ifconfig.me</code> OR <code class="language-plaintext highlighter-rouge">curl ipinfo.io</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ping &lt;IP_or_hostname&gt;</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nslookup &lt;IP_or_hostname&gt;</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">traceroute &lt;IP_or_hostname&gt;</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tracert &lt;IP_or_hostname&gt;</code> (Powershell)</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">netstat -an \| grep ESTABLISHED</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nmap -p &lt;IP_or_hostname&gt;</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tcpdump -i &lt;networkinterface&gt; -n host &lt;IP_or_hostname&gt;</code></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="network-info">Network Info</h3>
+
+<p>Find network information for the following systems using the commands and resources from above:</p>
+<ul>
+  <li>your host OS on your PC</li>
+  <li>your AWS instance
+    <ul>
+      <li>Note: you may need to install the appropriate network utilities to use commands like <code class="language-plaintext highlighter-rouge">ifconfig</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Only complete this for the internet accessible network the system is connected to:</p>
+<ul>
+  <li>usually <code class="language-plaintext highlighter-rouge">eth0</code> for your AWS instance</li>
+  <li>usually <code class="language-plaintext highlighter-rouge">Wireless LAN adapter Wi-Fi</code> for your laptop</li>
+</ul>
+
+<p>For each system:</p>
+
+<ol>
+  <li>
+    <p>Use a command to identify the system’s network information. Copy the output into your lab writeup.</p>
+  </li>
+  <li>
+    <p>Use the network info and other commands to fill in the following table for the system’s network information:</p>
+  </li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Setting</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hostname of the device</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>MAC address of the NIC</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Private IPv4 address</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Subnet mask</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Gateway address</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>DHCP address (if enabled)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>DNS server address</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Public IPv4 address</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Useful Notes</strong></p>
+<ul>
+  <li>At home, the gateway address is typically the same as your DHCP address. It basically says, “use the router for all of it”.</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">nslookup</code> to find the DNS server for hostname lookups. At home this may be your ISP DNS server, sometimes it is just the router IP again.</li>
+  <li>To resolve the public IPv4 you are using from your ISP, check sites like <code class="language-plaintext highlighter-rouge">ipinfo.io</code> or <code class="language-plaintext highlighter-rouge">ifconfig.me</code>. AWS instances have public IPs associated with them.</li>
+</ul>
+
+<p><strong>Resources</strong> on parsing <code class="language-plaintext highlighter-rouge">ipconfig</code>, <code class="language-plaintext highlighter-rouge">ifconfig</code> / <code class="language-plaintext highlighter-rouge">ip</code> output:</p>
+<ul>
+  <li><a href="https://lazyadmin.nl/it/ipconfig-command/">How To use the Powershell IPConfig Command and Options Explained - The Lazy Admin</a></li>
+  <li><a href="https://codewithyury.com/demystifying-ifconfig-and-network-interfaces-in-linux/">Demystifying ifconfig and network interfaces in Linux - Yury Pitsishin</a></li>
+  <li><a href="https://www.logicweb.com/knowledge-base/linux-tips/linux-ip-command-explained-with-examples/#3--displaying-ip-addresses">Linux IP Command Explained With Examples - Logic Web</a></li>
+  <li><a href="https://blogs.cisco.com/learning/exploring-the-linux-ip-command">Exploring the Linux ‘ip’ Command - with comparisons against other commands - Cisco Blog</a></li>
+</ul>
+
+<h2 id="part-2---socket-programming">Part 2 - Socket Programming</h2>
+
+<p>Review the following resource to get an overall feel for the difference between ports, sockets, and URLs:</p>
+<ul>
+  <li><a href="https://pattonsgirl.github.io/CEG2350/Labs/Lab12/ports_sockets_url_compare.html">Ports, Sockets, and URLs</a></li>
+</ul>
+
+<p>We have provided tar archives of Java and Python client and server source code that uses the socket library.</p>
+
+<ul>
+  <li><a href="https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Echo-Java.tar.gz">Java Client &amp; Server Source Code</a></li>
+  <li><a href="https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Echo-Python.tar.gz">Python Client &amp; Server Source Code</a></li>
+</ul>
+
+<p>Download and extract the tar archive of choice to your GitHub repository folder in <code class="language-plaintext highlighter-rouge">Lab12</code>.</p>
+
+<ol>
+  <li>Make a commit of the original source code files</li>
+  <li>Edit the both the client and server source code files - add comments to help <strong>you</strong> understand what it is doing. Commit and push your changes.
+    <ul>
+      <li>Cite sources that helped you understand by adding them to the comments or to your citations section.</li>
+    </ul>
+  </li>
+  <li>Edit the client side code to use your AWS Instance’s public IP as the <code class="language-plaintext highlighter-rouge">host</code>. Commit and push your changes.</li>
+  <li>Run (compile as well depending on language) the server code on your AWS instance.</li>
+  <li>Run (compile as well depending on language) the client code on your personal system - laptop / desktop / virtual machine.</li>
+  <li>Send messages to the server from the client.  Add a screenshot(s) 
+to your lab showing the communications between the client and server.</li>
+</ol>
+
+<p><strong>Resources</strong></p>
+<ul>
+  <li><a href="https://www.freecodecamp.org/news/how-to-execute-and-run-java-code/">How to Execute and Run Java Code from the Terminal - FreeCodeCamp</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/java-socket-programming-server-client">Java Socket Programming - Socket Server, Client example - DigitalOcean</a></li>
+  <li><a href="https://realpython.com/python-sockets/">Socket Programming in Python (Guide) - RealPython</a></li>
+</ul>
+
+<h2 id="part-3---security">Part 3 - Security</h2>
+
+<p>Your AWS instance is protected by a firewall via an AWS tool called 
+Security Groups. The default rules created allow broad access (e.g., any
+ IP on any port).</p>
+
+<p><img src="Lab%2012%20-%20Networking%20&amp;%20Firewalls%20_%20CEG%202350_files/Default-SGRules.JPG" alt="Default Security Group Rules"></p>
+
+<p>Your instance runs SSH (TCP on port 22) and Apache HTTP Server (TCP 
+on port 80). In Part 3, you’ll play with running a program that listens 
+on another port - 8080.</p>
+<ul>
+  <li>SSH enables secure shell access - access to use this service 
+should be limited to trusted network devices or devices on trusted 
+networks</li>
+  <li>Apache serves web content - typically is you host a webpage you 
+want the world (any network device) to be able to request to view the 
+content</li>
+</ul>
+
+<p><strong>Know trusted IP ranges:</strong></p>
+<ul>
+  <li>We are going to consider sources from Wright State University’s network to be trusted
+    <ul>
+      <li>130.108.0.0/16 = all IPs in range 130.108.0.0 to 130.108.255.255 - all IPs in the network block must start with <code class="language-plaintext highlighter-rouge">130.108</code></li>
+    </ul>
+  </li>
+  <li>We are going to consider your home public IP address to be trusted
+    <ul>
+      <li>This should use a <code class="language-plaintext highlighter-rouge">/32</code> CIDR block - as in only this IP in allowed / only host IP in the network block</li>
+      <li>Hint: remember how to view query for your public IP from Part 1</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Understand other ranges:</strong></p>
+<ul>
+  <li>One of your rules will ask you to allow any IP, or <code class="language-plaintext highlighter-rouge">0.0.0.0</code> - <code class="language-plaintext highlighter-rouge">255.255.255.255</code> - what CIDR block will you need to use?</li>
+  <li>Experiment with <a href="https://www.calculator.net/ip-subnet-calculator.html">Subnet Calculator</a></li>
+</ul>
+
+<p><strong>AWS Navigation</strong>:</p>
+<ul>
+  <li>Start Lab, open AWS console.</li>
+  <li>Go to EC2 &gt; Security Groups &gt; Select <code class="language-plaintext highlighter-rouge">ceg2350-Lab1SecurityGroup</code>.</li>
+  <li>Edit Inbound Rules only.</li>
+</ul>
+
+<p><strong>Revise Inbound Rules in Security Group <code class="language-plaintext highlighter-rouge">ceg2350-Lab1SecurityGroup</code>:</strong></p>
+<ul>
+  <li>Remove original rules.</li>
+  <li>Allow SSH from WSU IPs</li>
+  <li>Allow SSH from your home public IP</li>
+  <li>Allow ICMP from WSU IPs</li>
+  <li>Allow ICMP from your home public IP</li>
+  <li>Allow HTTP (port 80) from any IP</li>
+  <li>Allow port 8080 from any (or trusted) IPs</li>
+</ul>
+
+<p><strong>Describe how you validated your rules are working.</strong></p>
+<ul>
+  <li>When doing security testing, a base a validation testing is:
+    <ul>
+      <li>Something expected to work</li>
+      <li>Something expected to <strong>not</strong> work</li>
+    </ul>
+  </li>
+</ul>
+
+<p>If you break access - can no longer <code class="language-plaintext highlighter-rouge">ssh</code>
+ to your instance - take a screenshot of your rules so you can get 
+assistance, “reset” to default rules shown in the Default Security Group
+ Rules image and try again.</p>
+
+<h2 id="part-4---server-testing">Part 4 - Server Testing</h2>
+
+<p>The two things we generally ask about servers are: “Is it responding?” and “Is the service available?”.</p>
+
+<p>In this exercise, you will run a test suite of commands against each 
+IP / URL in the table below, document your findings in a results table, 
+and answer reflection questions based on what you discover.</p>
+
+<h3 id="test-servers">Test Servers</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Server IPs</th>
+      <th>Domain Names</th>
+      <th>URLs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">8.8.8.8</code></td>
+      <td><code class="language-plaintext highlighter-rouge">dns.google</code></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">5.9.243.187</code></td>
+      <td><code class="language-plaintext highlighter-rouge">wttr.in</code></td>
+      <td><code class="language-plaintext highlighter-rouge">https://wttr.in</code></td>
+    </tr>
+    <tr>
+      <td>Your AWS instance public IP</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">34.117.59.81</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ipinfo.io</code></td>
+      <td><code class="language-plaintext highlighter-rouge">https://ipinfo.io</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="test-suite">Test Suite</h3>
+
+<p>Run the following commands against <strong>each IP / domain name / url</strong> as appropriate in the table above.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Command</th>
+      <th>What to observe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ICMP Reachability</td>
+      <td><code class="language-plaintext highlighter-rouge">ping -c 10 &lt;IP / Domain Name&gt;</code></td>
+      <td>Does the server respond?</td>
+    </tr>
+    <tr>
+      <td>HTTP Request</td>
+      <td><code class="language-plaintext highlighter-rouge">curl -v http://&lt;IP / Domain Name&gt;</code></td>
+      <td>Response code, headers, content</td>
+    </tr>
+    <tr>
+      <td>HTTPS Request</td>
+      <td><code class="language-plaintext highlighter-rouge">curl -v https://&lt;IP / Domain Name&gt;</code></td>
+      <td>Response code, SSL errors, redirects</td>
+    </tr>
+    <tr>
+      <td>Forward DNS Lookup</td>
+      <td><code class="language-plaintext highlighter-rouge">nslookup &lt;Domain Name&gt;</code></td>
+      <td>Does it resolve to one or more IPs?</td>
+    </tr>
+    <tr>
+      <td>Reverse DNS Lookup</td>
+      <td><code class="language-plaintext highlighter-rouge">nslookup &lt;IP&gt;</code></td>
+      <td>Does it resolve to a domain name?</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="reflection-questions">Reflection questions:</h3>
+
+<ol>
+  <li>
+    <p><strong>ICMP and Firewalls</strong>: Why do some IPs not respond to <code class="language-plaintext highlighter-rouge">ping</code> even though they have active services running? What does this tell you about their firewall configuration?</p>
+  </li>
+  <li>
+    <p><strong>HTTP vs HTTPS</strong>: Using <code class="language-plaintext highlighter-rouge">wttr.in</code>, compare the results when you <code class="language-plaintext highlighter-rouge">curl -v http://&lt;IP / Domain Name&gt;</code> versus <code class="language-plaintext highlighter-rouge">curl -v https://&lt;IP / Domain Name&gt;</code> for the same server. What differences did you observe? Why?</p>
+  </li>
+  <li>
+    <p><strong>Raw Packet Capture</strong>: In a new tab, but on the same system you are using to run the <code class="language-plaintext highlighter-rouge">curl</code> commands, run a raw packet viewer for <code class="language-plaintext highlighter-rouge">wttr.in</code>: <code class="language-plaintext highlighter-rouge">sudo tcpdump -i any -nn -A port 80 or port 443 and host &lt;IP / Domain Name&gt;</code>. In another tab, <code class="language-plaintext highlighter-rouge">curl</code> using <code class="language-plaintext highlighter-rouge">http</code> and <code class="language-plaintext highlighter-rouge">https</code>, watching the packet dump after each <code class="language-plaintext highlighter-rouge">curl</code> request. Why can you “read” the weather info from the <code class="language-plaintext highlighter-rouge">http</code> request but not the <code class="language-plaintext highlighter-rouge">https</code> request?</p>
+  </li>
+  <li>
+    <p><strong>DNS Lookup</strong>: When using <code class="language-plaintext highlighter-rouge">nslookup</code>, which IPs resolved to domain names and which domain names resolved to IPs? Why might this matter?</p>
+  </li>
+  <li>
+    <p><strong>Troubleshooting</strong>: How would you use these commands if someone reported “the server is down”? What would be your troubleshooting strategy?</p>
+  </li>
+</ol>
+
+<h2 id="part-5---citations-and-resources">Part 5 - Citations and Resources</h2>
+
+<p>Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the <code class="language-plaintext highlighter-rouge">Citations / Resources</code>
+ section of your lab answers. You may refer to your own notes (if they 
+are digitized into GitHub), course notes, or external resources / 
+websites.</p>
+
+<p>To add citations / resources, provide the reference / link and a summary of what it assisted you with.</p>
+
+<p>If generative AI was used, include which generative AI system was 
+used, what prompt(s) you fed it, and a summary of what it assisted you 
+with.</p>
+
+<p>Since the networking command table and the socket program already 
+asked for resources, you only need to cite additional resources used in 
+completing the other lab taskings.</p>
+
+<h2 id="extra-credit---tattle-tale">Extra Credit - Tattle Tale</h2>
+
+<p><a href="https://pattonsgirl.github.io/CEG2350/Labs/Lab12/auth_logs.csv">auth_logs.csv</a>
+ is a cleaned up version of standard SSH logs, and contains only the 
+username used in the connection attempt and the IPv4 address the attempt
+ came from.  Take the provided data and give me 2 reports:</p>
+<ul>
+  <li>the top 5 IP addresses that generated connection attempts and how many attempts they made</li>
+  <li>the top 5 usernames used and how many times they were used</li>
+</ul>
+
+<p>Your reports must contain the set of commands used to create the reports.</p>
+
+<ul>
+  <li>Note: if you are curious about how I parsed <code class="language-plaintext highlighter-rouge">auth.log</code> to generate the <code class="language-plaintext highlighter-rouge">csv</code> file, you can <a href="https://github.com/pattonsgirl/api-projects/tree/main/ip-mapper/data">check out my documentation here</a> - there are likely prettier ways to do it.</li>
+</ul>
+
+<h2 id="submission">Submission</h2>
+
+<ol>
+  <li>
+    <p>Verify that your GitHub repo has a <code class="language-plaintext highlighter-rouge">Lab12</code> folder with at minimum:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">README.md</code></li>
+      <li>Java or python client code with comments / corrected IP ref</li>
+      <li>Java or python server code with comments</li>
+    </ul>
+  </li>
+  <li>
+    <p>In the Pilot Dropbox, paste the URL to the <code class="language-plaintext highlighter-rouge">Lab12</code> folder in your GitHub repo</p>
+    <ul>
+      <li>URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab12</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="rubric">Rubric</h2>
+
+<p>Your files should be cleanly presented in your GitHub repository.  
+Citations should be included as needed.  Include which generative AI 
+system was used and what prompts were used if generative AI was used.</p>
+
+<p><a href="https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/Rubric.md">Rubric</a></p>
+
+<h2 id="additional-resources">Additional Resources</h2>
+
+<h3 id="code-to-use-sockets">Code to use sockets</h3>
+<ul>
+  <li><a href="https://www.freecodecamp.org/news/how-to-execute-and-run-java-code/">How to Execute and Run Java Code from the Terminal - FreeCodeCamp</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/java-socket-programming-server-client">Java Socket Programming - Socket Server, Client example - DigitalOcean</a></li>
+  <li><a href="https://realpython.com/python-sockets/">Socket Programming in Python (Guide) - RealPython</a></li>
+</ul>
+
+<h3 id="network-admin-toolkit">Network Admin Toolkit</h3>
+<ul>
+  <li><a href="https://downdetector.com/">Down Detector</a></li>
+</ul>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/pattonsgirl">pattonsgirl</a></p>
+        
+        <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/pages-themes/dinky">Dinky</a></small></p>
+      </footer>
+    </div>
+    <script src="Lab%2012%20-%20Networking%20&amp;%20Firewalls%20_%20CEG%202350_files/scale.fix.js"></script>
+  
+
+</body></html>

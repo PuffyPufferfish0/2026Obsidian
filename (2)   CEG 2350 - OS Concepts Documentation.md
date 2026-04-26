@@ -128,3 +128,69 @@ Managing active programs (RAM) and background daemons.
 - **Terminal Multiplexers ([[tmux]])**: Running "pseudo-terminals" to detach and attach background sessions.
     
 - **Kernel & Services**: The device's Kernel manages hardware/resources. `init`/`systemd` (PID 1) starts everything else. Managed using `systemctl` (start, stop, enable, reload).
+
+## 10. [[Git Branching]] & Version Control
+
+Expanding on standard Git usage to work with multiple streams of development.
+
+- **[[git branch]]**: Creating and listing branches.
+    
+- **[[git checkout]] / [[git switch]]**: Moving between branches.
+    
+- **[[git merge]]**: Combining changes from one branch into another.
+    
+- **[[gitignore]]**: Preventing specific files (like compiled binaries) from being tracked.
+    
+
+## 11. [[Compilers]] & [[Makefiles]]
+
+Transforming human-readable source code into machine-executable programs.
+
+- **Compilers**: `gcc` (C) and `g++` (C++).
+    
+- **Compilation Process**: Pre-processor -> Compiler -> Assembler -> Linker.
+    
+- **[[make]]**: Automating the build process using a `Makefile` with targets, dependencies, and actions.
+    
+
+## 12. Archiving & Remote File Transfer
+
+Compressing files and securely transferring them between environments.
+
+- **[[tar]]**: Tape Archive utility for creating compressed `.tar.gz` files.
+    
+- **[[sftp]]**: Secure File Transfer Protocol for moving files between a local machine and a remote server.
+    
+
+## 13. Advanced [[SSH]] & Web Serving
+
+Managing secure access and hosting web content.
+
+- **SSH Keys**: Generating `ed25519` keys and managing the `~/.ssh/authorized_keys` file.
+    
+- **[[Web Servers]]**: Installing services like `apache2` or `nginx` to serve static HTML content from `/var/www/html`.
+    
+
+## 14. [[Networking Commands]] & Discovery
+
+Tools for diagnosing and mapping networks.
+
+- **IP & Routing**: `ip a`, `ifconfig`, `route`.
+    
+- **Connectivity & DNS**: `ping`, `curl`, `nslookup`, `traceroute`.
+    
+- **Packet Analysis**: `tcpdump`, `nmap`, `netstat`.
+    
+
+## 15. Firewalls & Sockets
+
+Securing systems and programmatic network communication.
+
+- **Firewalls**: Managing inbound/outbound rules (e.g., AWS Security Groups, `iptables`).
+    
+- **Sockets**: The software endpoints used by applications to communicate across a network using an IP address and a Port.
+  
+
+## Also see **[[PRACTICE_EXAMIII]]**
+it's just the one she gave us, could be pretty useful
+

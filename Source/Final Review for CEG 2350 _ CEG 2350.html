@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en-US" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen">*:not(pre, pre *, code, [aria-hidden="true"], [class*="fa-"], .fa, .fab, .fad, .fal, .far, .fas, .fass, .fasr, .fat, .icofont, [style*="font-"], [class*="icon"], [class*="Icon"], [class*="symbol"], [class*="Symbol"], .glyphicon, [class*="material-symbol"], [class*="material-icon"], mu, [class*="mu-"], .typcn, [class*="vjs-"]) {
+  -webkit-text-stroke: 0.4px !important;
+  text-stroke: 0.4px !important;
+}</style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container, div.mc-ip-hide[style*="background: rgb(255, 255, 255) !important"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Final Review for CEG 2350 | CEG 2350</title>
+<meta name="generator" content="Jekyll v3.10.0">
+<meta property="og:title" content="Final Review for CEG 2350">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Operating Systems Concepts &amp; Design">
+<meta property="og:description" content="Operating Systems Concepts &amp; Design">
+<link rel="canonical" href="https://pattonsgirl.github.io/CEG2350/ExamReviews/final-review.html">
+<meta property="og:url" content="https://pattonsgirl.github.io/CEG2350/ExamReviews/final-review.html">
+<meta property="og:site_name" content="CEG 2350">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Final Review for CEG 2350">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Operating Systems Concepts &amp; Design","headline":"Final Review for CEG 2350","url":"https://pattonsgirl.github.io/CEG2350/ExamReviews/final-review.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="Final%20Review%20for%20CEG%202350%20_%20CEG%202350_files/style.css"><style class="darkreader darkreader--sync" media="screen"></style>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/CEG2350/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  <meta name="darkreader" content="b429942db4464d85a473529393db1db0"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select {
+    --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+.d2l-twopanelselector-side.d2l-twopanelselector-side-sep {
+    background: var(--darkreader-bg--d2l-color-mica) !important;
+}
+.d2l-le-TreeAccordionItem-anchor::before {
+    background: var(--darkreader-bg--d2l-color-corundum) !important;
+}
+table[class|="moz-header"] {
+    background: none;
+}
+*[style*="color: rgba(0,0,0,"],
+*[style*="color: rgba(0, 0, 0,"],
+*[style*="color:#000"],
+*[style*="color:black"],
+*[style*="color:#282828"],
+*[style*="color:#444"] {
+    color: var(--darkreader-neutral-text) !important;
+}
+*[style*="background:#fff"],
+*[style*="background-color:#fff"] {
+    background: var(--darkreader-neutral-background) !important;
+}
+*[bgcolor="#F5F5F5"],
+*[style*="background-color: #F5F5F5"] {
+    background: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+body[style*="background: rgb(255, 255, 255) !important"] *:not(a),
+.body[style*="background-color: rgb(254, 254, 254) !important"] *:not(a) {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+div[style*="www.gstatic.com/android/"] {
+    background: none !important;
+}
+*[style*="background:#f9f9f9"] {
+    background: var(--darkreader-background-f9f9f9, #1b1e1f) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></head>
+  <body>
+    <div class="wrapper">
+      <header>
+        
+
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350">Course Info / Syllabus</a></p>
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350/Labs">Labs</a></p>
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350/Topics">Lecture Topics</a></p>
+        <p align="center"><a href="https://pattonsgirl.github.io/CEG2350/ExamReviews">Exam Reviews</a></p>
+        <p align="center"><a href="https://github.com/pattonsgirl/CEG2350/">Source Code &amp; Other Resources</a></p>
+
+        <hr>
+        
+        <p>Operating Systems Concepts &amp; Design</p>
+
+        
+      </header>
+      <section>
+
+      <h1 id="final-review-for-ceg-2350">Final Review for CEG 2350</h1>
+
+<h2 id="intro-topics">Intro topics</h2>
+
+<ol>
+  <li>Shells
+    <ul>
+      <li>Windows: powershell, cmd</li>
+      <li>Linux / Mac: bash, sh, zsh</li>
+    </ul>
+  </li>
+  <li>SSH
+    <ul>
+      <li>the command, its options, and structure of information</li>
+      <li>private key files (location and permissions)</li>
+      <li>public keys and the authorized_keys file</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="files-directories-and-os-structure">Files, directories, and OS structure</h2>
+
+<ol>
+  <li>Filesystem structure in Linux, Mac, and Windows</li>
+  <li>Files vs directories</li>
+  <li>Commands: ls, cp, mkdir, rmdir, vim, mv, rm, cd, cat, touch, head/tail, less/more</li>
+  <li>Importance of names and extensions (file)</li>
+  <li>Ownership &amp; sharing
+    <ul>
+      <li>rwx permissions in Linux</li>
+      <li>user vs. group vs. other</li>
+      <li>creating users &amp; groups (and naming rules)</li>
+      <li>chmod, chown, chgrp, adduser, deluser</li>
+      <li>sudo &amp; the root user</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="scripting">Scripting</h2>
+
+<ol>
+  <li>Environment variables
+    <ul>
+      <li>HOME</li>
+      <li>USER</li>
+      <li>SHELL</li>
+      <li>PATH</li>
+    </ul>
+  </li>
+  <li>Aliases &amp; customizations (.bashrc, .profile)</li>
+  <li>Commands: diff, find, file, wc, sort, uniq, whereis, which</li>
+  <li>IO streams (standard input, output (1) and error (2)) and redirection (<code class="language-plaintext highlighter-rouge">&lt;, &gt;, &gt;&gt;, |, tee</code>)</li>
+  <li>executing scripts
+    <ul>
+      <li>within current bash shell (source (or <code class="language-plaintext highlighter-rouge">.</code>)</li>
+      <li>by specifying interpreter (bash)</li>
+      <li>by specifying the interpreter with <code class="language-plaintext highlighter-rouge">#!</code> (<code class="language-plaintext highlighter-rouge">./</code>)</li>
+      <li>by name from any location (adding path to PATH)</li>
+    </ul>
+  </li>
+  <li>Scripting languages: bash
+    <ul>
+      <li>variables</li>
+      <li>reading input</li>
+      <li>printf vs echo</li>
+      <li>arguments</li>
+      <li>conditionals (<code class="language-plaintext highlighter-rouge">test</code>)</li>
+      <li>if</li>
+      <li>for</li>
+      <li>while</li>
+      <li>case</li>
+      <li>getopts</li>
+      <li>functions</li>
+    </ul>
+  </li>
+  <li>Regular expressions</li>
+  <li>grep (search)</li>
+  <li>sed (search and replace)</li>
+  <li>awk (manipulate formatted data)</li>
+</ol>
+
+<h2 id="computer-hardware--vms">Computer Hardware &amp; VMs</h2>
+
+<ol>
+  <li>Computer Hardware:
+    <ul>
+      <li>CPU</li>
+      <li>RAM</li>
+      <li>Motherboard</li>
+      <li>Disks (HDD, SSD, NVME)</li>
+      <li>GPU (discrete / dedicated vs integrated)</li>
+    </ul>
+  </li>
+  <li>VMs
+    <ul>
+      <li>hypervisor</li>
+      <li>host considerations when creating VMs</li>
+      <li>installing guest VMs</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="boot-process">Boot Process</h2>
+
+<ol>
+  <li>BIOS / UEFI</li>
+  <li>POST</li>
+  <li>bootloader</li>
+  <li>kernel</li>
+  <li>OS</li>
+</ol>
+
+<h2 id="filesystems--disks">Filesystems &amp; Disks</h2>
+
+<ol>
+  <li>Devices
+    <ul>
+      <li>block - SSD, HDD, NVME, CD, USB</li>
+      <li>character - <code class="language-plaintext highlighter-rouge">/dev/null</code>, <code class="language-plaintext highlighter-rouge">/dev/zero</code>, <code class="language-plaintext highlighter-rouge">/dev/random</code></li>
+    </ul>
+  </li>
+  <li>Partition tables &amp; partitions
+    <ul>
+      <li>MBR vs GPT</li>
+      <li>Tools: parted, gdisk, fdisk</li>
+    </ul>
+  </li>
+  <li>Filesystems
+    <ul>
+      <li>Standard defaults for Windows, Linux, and Mac</li>
+      <li>compatibility, metadata, structure</li>
+      <li>inodes
+        <ul>
+          <li>Symbolic links vs. hard links</li>
+          <li>Tools: <code class="language-plaintext highlighter-rouge">ln</code>, <code class="language-plaintext highlighter-rouge">stat</code></li>
+        </ul>
+      </li>
+      <li>Tools: <code class="language-plaintext highlighter-rouge">du</code>, <code class="language-plaintext highlighter-rouge">df</code>, <code class="language-plaintext highlighter-rouge">mkfs</code></li>
+    </ul>
+  </li>
+  <li>Mounting &amp; “ejecting”
+    <ul>
+      <li>mounting to <code class="language-plaintext highlighter-rouge">/</code></li>
+      <li>automounting with <code class="language-plaintext highlighter-rouge">fstab</code> entries</li>
+      <li>Tools: <code class="language-plaintext highlighter-rouge">mount</code>, <code class="language-plaintext highlighter-rouge">umount</code></li>
+    </ul>
+  </li>
+  <li>Compression (<code class="language-plaintext highlighter-rouge">tar</code> &amp; <code class="language-plaintext highlighter-rouge">gzip</code>)</li>
+</ol>
+
+<h2 id="process-control">Process Control</h2>
+
+<ol>
+  <li>Terminology
+    <ul>
+      <li>process</li>
+      <li>application</li>
+      <li>service / daemon</li>
+    </ul>
+  </li>
+  <li>Process states
+    <ul>
+      <li>Running</li>
+      <li>Sleeping</li>
+      <li>Stopped</li>
+      <li>Zombie</li>
+      <li>Orphan</li>
+    </ul>
+  </li>
+  <li>Process metadata
+    <ul>
+      <li>PID</li>
+      <li>PPID</li>
+      <li>User</li>
+      <li>Command</li>
+      <li>Controlling terminal</li>
+    </ul>
+  </li>
+  <li>Process manipulation
+    <ul>
+      <li>viewing active processes</li>
+      <li>killing processes</li>
+      <li>foreground vs background processes (<code class="language-plaintext highlighter-rouge">bg</code>, <code class="language-plaintext highlighter-rouge">fg</code>)</li>
+      <li>“pseudo terminals” via <code class="language-plaintext highlighter-rouge">tmux</code></li>
+    </ul>
+  </li>
+  <li>Service manipulation with <code class="language-plaintext highlighter-rouge">systemctl</code>
+    <ul>
+      <li>enable vs disable</li>
+      <li>start, stop, reload / restart</li>
+      <li>format of a service unit file</li>
+    </ul>
+  </li>
+  <li>init / systemd
+    <ul>
+      <li>systemctl (manage services)</li>
+      <li>journalctl (view service logs)</li>
+    </ul>
+  </li>
+  <li>Tools: <code class="language-plaintext highlighter-rouge">ps</code>, <code class="language-plaintext highlighter-rouge">top</code>, <code class="language-plaintext highlighter-rouge">kill</code>, <code class="language-plaintext highlighter-rouge">jobs</code></li>
+</ol>
+
+<h2 id="programming">Programming</h2>
+
+<ol>
+  <li>Languages:
+    <ul>
+      <li>Interpreted: bash, python</li>
+      <li>Compiled: C / C++, Java (JDK vs JVM)</li>
+    </ul>
+  </li>
+  <li>Compilation (in C / C++):
+    <ul>
+      <li>pre-processor</li>
+      <li>compiler</li>
+      <li>assembler</li>
+      <li>linker</li>
+      <li><code class="language-plaintext highlighter-rouge">gcc</code>/ <code class="language-plaintext highlighter-rouge">g++</code> and compilation flags</li>
+      <li>Linux ELF (Executable &amp; Linkable Format)</li>
+      <li>Windows EXE</li>
+    </ul>
+  </li>
+  <li>Makefiles
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">make</code></li>
+      <li>targets</li>
+      <li>dependencies</li>
+      <li>actions</li>
+    </ul>
+  </li>
+  <li>Tools: <code class="language-plaintext highlighter-rouge">which</code>, <code class="language-plaintext highlighter-rouge">whereis</code>, <code class="language-plaintext highlighter-rouge">ldd</code></li>
+</ol>
+
+<h2 id="networking">Networking</h2>
+<ol>
+  <li>Core networking concepts
+    <ul>
+      <li>Methods of communication (physical layer): wifi, ethernet, fiber</li>
+      <li>Network interface (NIC)
+        <ul>
+          <li>communicates over physical layer</li>
+          <li>Media Access Control address (MAC)</li>
+        </ul>
+      </li>
+      <li>Network concepts
+        <ul>
+          <li>IPv4 vs IPv6 addressing</li>
+          <li>DNS</li>
+          <li>DHCP</li>
+          <li>subnets</li>
+          <li>routes</li>
+          <li>border gateways / Network Address Translation (NAT)</li>
+          <li>ports</li>
+          <li>socket</li>
+          <li>URL</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>IPv4 concepts
+    <ul>
+      <li>Subnetting &amp; CIDR notation</li>
+      <li>applied questions will be with an output from commands that show network info</li>
+    </ul>
+  </li>
+  <li>Firewalls
+    <ul>
+      <li>inbound / INPUT / ingress</li>
+      <li>outbound / OUTPUT / egress</li>
+      <li>common sense rules &amp; trusted networks</li>
+      <li>applied questions will be with a view of an AWS Security Group</li>
+    </ul>
+  </li>
+  <li>Commands: <code class="language-plaintext highlighter-rouge">ip</code>, <code class="language-plaintext highlighter-rouge">ifconfig</code>, <code class="language-plaintext highlighter-rouge">route</code>, <code class="language-plaintext highlighter-rouge">ping</code>, <code class="language-plaintext highlighter-rouge">curl</code>, <code class="language-plaintext highlighter-rouge">wget</code>, <code class="language-plaintext highlighter-rouge">hostname</code>, <code class="language-plaintext highlighter-rouge">nslookup</code>
+    <ul>
+      <li>also useful: <code class="language-plaintext highlighter-rouge">arp</code>, <code class="language-plaintext highlighter-rouge">iptables</code>, <code class="language-plaintext highlighter-rouge">nmap</code>, <code class="language-plaintext highlighter-rouge">traceroute</code>, <code class="language-plaintext highlighter-rouge">tcpdump</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="network-protocols">Network protocols</h3>
+<ol>
+  <li>HTTP</li>
+  <li>HTTPS
+    <ul>
+      <li>certificates &amp; Certificate Authorities</li>
+    </ul>
+  </li>
+  <li>SSH
+    <ul>
+      <li>Commands: <code class="language-plaintext highlighter-rouge">ssh</code>, <code class="language-plaintext highlighter-rouge">ssh-keygen</code>, <code class="language-plaintext highlighter-rouge">sftp</code>, <code class="language-plaintext highlighter-rouge">scp</code></li>
+      <li>Files:
+        <ul>
+          <li>private key</li>
+          <li>public key</li>
+          <li><code class="language-plaintext highlighter-rouge">config</code></li>
+          <li><code class="language-plaintext highlighter-rouge">known_hosts</code></li>
+          <li><code class="language-plaintext highlighter-rouge">authorized_keys</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="git-version-control">Git (version control)</h2>
+
+<ol>
+  <li>Version control as a concept</li>
+  <li>Steps to clone with <code class="language-plaintext highlighter-rouge">ssh</code> for authentication</li>
+  <li>Basic commands:
+    <ul>
+      <li>clone</li>
+      <li>add</li>
+      <li>commit</li>
+      <li>push</li>
+      <li>pull</li>
+      <li>status</li>
+      <li>branch</li>
+      <li>checkout</li>
+      <li>merge</li>
+    </ul>
+  </li>
+  <li>Files:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">.gitignore</code></li>
+    </ul>
+  </li>
+</ol>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/pattonsgirl">pattonsgirl</a></p>
+        
+        <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/pages-themes/dinky">Dinky</a></small></p>
+      </footer>
+    </div>
+    <script src="Final%20Review%20for%20CEG%202350%20_%20CEG%202350_files/scale.fix.js"></script>
+  
+
+</body></html>
