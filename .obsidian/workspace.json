@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "(2)   CEG 2350 - OS Concepts Documentation.md",
+                "file": "QUIZ9-10 plus practice questions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "(2)   CEG 2350 - OS Concepts Documentation"
+              "title": "QUIZ9-10 plus practice questions"
             }
           }
         ]
@@ -185,9 +185,10 @@
   },
   "active": "b2e0421702a5b758",
   "lastOpenFiles": [
-    "OtherResources/ExamIII/FINAL_REVIEW.md",
     "(2)   CEG 2350 - OS Concepts Documentation.md",
-    "QUIZ9-10 plus practice exams.md",
+    "QUIZ9-10 plus practice questions.md",
+    "OtherResources/ExamIII/FINAL_REVIEW.md",
+    "OtherResources/ExamII/Quizzes 6-8.md",
     "Untitled.md",
     "README.md",
     "dictEXAMIII/Web Servers.md",
@@ -221,7 +222,6 @@
     "Source/quiz9_files/QuestionCollection.Main.radioChecked.svg",
     "Source/quiz9_files/QuestionCollection.Main.radioUnchecked.svg",
     "Source/Lab 12 - Networking & Firewalls _ CEG 2350_files/Default-SGRules.JPG",
-    "OtherResources/ExamII/Quizzes 6-8.md",
     "dictEXAMII/Process Management & Control.md",
     "dictEXAMII/ssh_config.md",
     "dictEXAMI/grep.md",
