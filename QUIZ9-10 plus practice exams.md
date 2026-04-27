@@ -402,3 +402,382 @@ I have changes (commits) on branch GUI-dev that need to be merged to the main br
     
 
 **Explanation:** To merge branches in Git, you must first switch to the "destination" branch (the one that will receive the new code). In this scenario, `main` is the destination. Once on `main`, you use `git merge <source_branch>` to pull the commits from the source branch (`GUI-dev`) into your current branch.
+
+
+
+# Practice Exam
+
+## 1. Network Discovery & Testing
+
+**Question:** You are troubleshooting a web server and need to test if the HTTP service is running and view the specific response headers being returned. Which command is best suited for this?
+
+- [ ] `ping http://localhost`
+    
+- [ ] `nslookup localhost`
+    
+- [x] `curl -v http://localhost`
+    
+- [ ] `traceroute localhost`
+    
+
+**Explanation/Notes:** `curl` is used to transfer data to or from a server. The `-v` (verbose) flag is essential here because it displays the complete request and response headers, allowing you to debug the HTTP transaction.
+
+## 2. Advanced `tar` Archiving
+
+**Question:** You need to view the contents of a compressed archive named `backup.tar.gz` without actually extracting the files. Which `tar` flag combination should you use?
+
+- [ ] `-xzvf`
+    
+- [ ] `-czvf`
+    
+- [x] `-tzvf`
+    
+- [ ] `-vzf`
+    
+
+**Explanation/Notes:** The `-t` flag stands for "list". Combined with `z` (gzip), `v` (verbose), and `f` (file), it lists the contents of the tarball without unpacking it to your directory.
+
+## 3. SSH Configurations
+
+**Question:** What is the primary purpose of the `~/.ssh/known_hosts` file on your local machine?
+
+- [ ] To store the public keys of users allowed to access your machine.
+    
+- [x] To store the host keys of remote servers you have previously connected to, preventing man-in-the-middle attacks.
+    
+- [ ] To define custom shortcuts and aliases for SSH connections.
+    
+- [ ] To store your private keys securely.
+    
+
+**Explanation/Notes:** The `known_hosts` file logs the cryptographic identity of servers you connect to. If a server's identity changes in the future, SSH will warn you, protecting you from connecting to a malicious imposter.
+
+## 4. Git Version Control
+
+**Question:** You accidentally committed a compiled binary file (`app.exe`) to your Git repository. You added it to your `.gitignore` file, but Git is still tracking it. What command must you run to fix this?
+
+- [ ] `git remove app.exe`
+    
+- [x] `git rm --cached app.exe`
+    
+- [ ] `git delete app.exe`
+    
+- [ ] `git checkout app.exe`
+    
+
+**Explanation/Notes:** If a file is already being tracked by Git, adding it to `.gitignore` won't untrack it. You must use `git rm --cached` to remove it from Git's tracking index while keeping the file on your local hard drive.
+
+## 5. Web Server Document Root
+
+**Question:** By default, if you install `apache2` or `nginx` on an Ubuntu system, in which directory must you place your `index.html` file for the web server to serve it to the public?
+
+- [ ] `/etc/apache2/html`
+    
+- [ ] `/home/ubuntu/www`
+    
+- [x] `/var/www/html`
+    
+- [ ] `/usr/share/nginx/html`
+    
+
+**Explanation/Notes:** `/var/www/html` is the default "Document Root" for web servers on Debian/Ubuntu systems. The web server daemon looks here first for content to serve.
+
+## 6. Process States
+
+**Question:** In Linux, what defines a "Zombie" process?
+
+- [ ] A process that is currently running in the background using `&`.
+    
+- [ ] A process whose parent has died, and it has been adopted by `init`/`systemd`.
+    
+- [x] A process that has completed execution but still has an entry in the process table because its parent hasn't read its exit status.
+    
+- [ ] A process that has been paused using a `SIGSTOP` signal.
+    
+
+**Explanation/Notes:** A zombie is "dead" but hasn't been "reaped". If the parent process dies before reaping the child, the child becomes an "Orphan" (which is then adopted by `init`).
+
+## 7. The Compilation Process
+
+**Question:** During the C/C++ compilation process, which stage is responsible for translating Assembly language into machine-readable binary object code?
+
+- [ ] Pre-processor
+    
+- [ ] Compiler
+    
+- [x] Assembler
+    
+- [ ] Linker
+    
+
+**Explanation/Notes:** The order is Pre-processor (handles macros/includes) -> Compiler (C++ to Assembly) -> Assembler (Assembly to Binary Object code) -> Linker (combines object code with libraries into an executable).
+
+## 8. Makefiles
+
+**Question:** In a `Makefile`, what represents the files or conditions that must be satisfied before a specific target can be built?
+
+- [ ] Actions
+    
+- [x] Dependencies
+    
+- [ ] Macros
+    
+- [ ] Compilers
+    
+
+**Explanation/Notes:** A Makefile rule consists of a Target, its Dependencies (the files needed to build the target), and the Actions (the tab-indented shell commands to execute the build).
+
+## 9. SFTP Commands
+
+**Question:** While connected to an AWS instance via `sftp`, which command would you use to change the working directory on your **local** machine without closing the connection?
+
+- [ ] `cd`
+    
+- [x] `lcd`
+    
+- [ ] `pwd`
+    
+- [ ] `local cd`
+    
+
+**Explanation/Notes:** In SFTP, standard commands like `cd`, `ls`, and `pwd` apply to the remote server. Prepending an `l` (e.g., `lcd`, `lls`, `lpwd`) applies the command to your local machine.
+
+## 10. DNS and Routing
+
+**Question:** Which networking command queries the Domain Name System (DNS) to perform a reverse lookup, converting a known IP address into its corresponding domain name?
+
+- [ ] `route`
+    
+- [x] `nslookup`
+    
+- [ ] `traceroute`
+    
+- [ ] `nmap`
+    
+
+**Explanation/Notes:** `nslookup` (Name Server Lookup) can perform both forward lookups (Domain to IP) and reverse lookups (IP to Domain).
+
+## 11. Security Groups and Firewalls
+
+**Question:** In an AWS Security Group, what CIDR block should you use to allow inbound traffic from _any_ IPv4 address on the internet?
+
+- [ ] `127.0.0.1/32`
+    
+- [ ] `10.0.0.0/24`
+    
+- [x] `0.0.0.0/0`
+    
+- [ ] `255.255.255.255/32`
+    
+
+**Explanation/Notes:** `0.0.0.0/0` represents the entire IPv4 address space. Conversely, a `/32` block (e.g., `192.168.1.5/32`) restricts access to one specific, single IP address.
+
+## 12. Linux Boot Process
+
+**Question:** What is the correct chronological order of the Linux boot process?
+
+- [ ] Bootloader -> BIOS/UEFI -> POST -> Kernel -> OS/init
+    
+- [x] BIOS/UEFI -> POST -> Bootloader -> Kernel -> OS/init
+    
+- [ ] POST -> Bootloader -> BIOS/UEFI -> OS/init -> Kernel
+    
+- [ ] Kernel -> BIOS/UEFI -> POST -> Bootloader -> OS/init
+    
+
+**Explanation/Notes:** The firmware (BIOS/UEFI) wakes up first, runs hardware checks (POST), hands off to the Bootloader (like GRUB), which loads the Kernel into memory. Finally, the Kernel starts the OS services (systemd/init).
+
+## 13. System Utilities
+
+**Question:** You want to find out the exact path to the executable file for the `gcc` compiler. Which command will return this location based on your `$PATH` variable?
+
+- [ ] `find gcc`
+    
+- [x] `which gcc`
+    
+- [ ] `ldd gcc`
+    
+- [ ] `grep gcc`
+    
+
+**Explanation/Notes:** `which` (and `whereis`) searches the directories listed in your `$PATH` environment variable to find the location of the executable command. `ldd` checks shared library dependencies.
+
+## 14. File Inodes & Links
+
+**Question:** What happens if you delete the original source file that a **symbolic link (symlink)** points to?
+
+- [ ] The symbolic link automatically deletes itself.
+    
+- [ ] The data remains accessible through the symbolic link.
+    
+- [x] The symbolic link breaks and becomes a "dangling" link.
+    
+- [ ] The OS restores the original file.
+    
+
+**Explanation/Notes:** A symlink points to a file's _name/path_. If the target is deleted, the link breaks. A _hard link_, however, points directly to the inode; the data persists as long as at least one hard link exists.
+
+## 15. Shell Scripting variables
+
+**Question:** In a bash script, which environment variable stores the exit status of the most recently executed command?
+
+- [x] `$?`
+    
+- [ ] `$$`
+    
+- [ ] `$PATH`
+    
+- [ ] `$1`
+    
+
+**Explanation/Notes:** `$?` returns `0` if the previous command was successful, and a non-zero number (like `1` or `2`) if an error occurred. `$1` is the first argument passed to the script, and `$$` is the PID of the current shell.
+
+## 16. Packet Sniffing
+
+**Question:** Which command provides raw packet capture capabilities directly from the command line, allowing you to see traffic on port 80 or 443?
+
+- [ ] `netstat`
+    
+- [ ] `nmap`
+    
+- [x] `tcpdump`
+    
+- [ ] `iptables`
+    
+
+**Explanation/Notes:** `tcpdump` is a powerful packet analyzer. `netstat` shows active connections, `nmap` scans for open ports, and `iptables` manages firewall rules.
+
+## 17. Bash Text Processing
+
+**Question:** Which text processing tool is best described as a "stream editor" that is highly effective for performing on-the-fly find-and-replace operations within text files?
+
+- [ ] `grep`
+    
+- [x] `sed`
+    
+- [ ] `awk`
+    
+- [ ] `wc`
+    
+
+**Explanation/Notes:** `sed` (Stream Editor) is famously used for substitutions (e.g., `sed 's/find/replace/g'`). `grep` is for searching, and `awk` is for column/field-based data manipulation.
+
+## 18. Service Management
+
+**Question:** Using `systemctl`, what is the difference between `enable` and `start`?
+
+- [ ] `start` turns it on permanently, `enable` turns it on for the current session.
+    
+- [x] `start` turns it on for the current session, `enable` configures it to start automatically on boot.
+    
+- [ ] They are identical commands.
+    
+- [ ] `enable` allows users to use it, `start` runs the binary.
+    
+
+**Explanation/Notes:** If you install a web server, you `start` it to run it right now. You `enable` it so that if the server reboots, the web service turns itself back on automatically.
+
+## 19. Terminal Multiplexers
+
+**Question:** What is the primary benefit of using a tool like `tmux`?
+
+- [ ] It compiles C++ code faster.
+    
+- [ ] It securely transfers files over SSH.
+    
+- [x] It creates pseudo-terminals that allow processes to keep running in the background even if your SSH session disconnects.
+    
+- [ ] It acts as a firewall for your terminal.
+    
+
+**Explanation/Notes:** `tmux` (Terminal Multiplexer) allows you to "detach" from a session, leaving tasks running, and "attach" to it later, preventing long scripts from dying if your connection drops.
+
+## 20. Networking / Sockets
+
+**Question:** In socket programming (as seen in Lab 12), what two pieces of information are required to successfully form a socket connection?
+
+- [ ] MAC Address and Hostname
+    
+- [ ] Public Key and Private Key
+    
+- [x] IP Address and Port Number
+    
+- [ ] Domain Name and Subnet Mask
+    
+
+**Explanation/Notes:** An IP Address routes the traffic to the correct physical machine, and the Port Number routes the traffic to the correct software application running on that machine. Together, they form a Socket.
+
+## 21. Standard IO Redirection
+
+**Question:** What does the `>>` operator do in bash?
+
+- [ ] Overwrites the contents of a file with standard output.
+    
+- [x] Appends standard output to the end of an existing file.
+    
+- [ ] Redirects standard error (stderr) to standard output.
+    
+- [ ] Pipes the output of one command into the input of another.
+    
+
+**Explanation/Notes:** `>` overwrites a file. `>>` appends to a file. `|` pipes output to another command.
+
+## 22. Network Routing
+
+**Question:** When looking at network information, what is the role of the "Gateway Address"?
+
+- [ ] It translates domain names to IP addresses.
+    
+- [x] It is the IP address of the router that handles traffic destined for outside the local subnet.
+    
+- [ ] It is the unique hardware identifier of your Network Interface Card.
+    
+- [ ] It assigns dynamic IP addresses to new devices on the network.
+    
+
+**Explanation/Notes:** If your computer wants to talk to a computer not on your local network (like a server on the internet), it sends the packet to the Default Gateway (usually your router), which forwards it out to the internet.
+
+## 23. File Permissions
+
+**Question:** You run `ls -l` and see a file with permissions `-rwxr-xr--`. What does this mean in terms of User, Group, and Other?
+
+- [ ] User: Read/Write, Group: Read/Execute, Other: Read
+    
+- [x] User: Read/Write/Execute, Group: Read/Execute, Other: Read
+    
+- [ ] User: Read/Execute, Group: Read/Write, Other: Execute
+    
+- [ ] User: Read/Write/Execute, Group: Read/Write, Other: None
+    
+
+**Explanation/Notes:** The first three (`rwx`) belong to the Owner/User. The middle three (`r-x`) belong to the Group. The last three (`r--`) belong to Other/World. In octal notation, this is `754`.
+
+## 24. Process Control
+
+**Question:** You have a process running in the foreground that is unresponsive. You press `Ctrl+Z`. What does this do?
+
+- [ ] It forcefully kills the process (SIGKILL).
+    
+- [ ] It gracefully terminates the process (SIGTERM).
+    
+- [x] It stops/pauses the process and sends it to the background.
+    
+- [ ] It detaches the process from the terminal.
+    
+
+**Explanation/Notes:** `Ctrl+Z` sends a `SIGSTOP` signal, pausing the process and returning control of the terminal. You can then use the `bg` command to let it run in the background, or `fg` to bring it back. `Ctrl+C` sends `SIGINT` to interrupt/terminate.
+
+## 25. Git Collaboration
+
+**Question:** You've created a new branch locally and made your commits. When you try to run `git push`, Git gives you an error because the remote repository doesn't know about this branch yet. What command must you run?
+
+- [ ] `git push --force`
+    
+- [ ] `git merge origin main`
+    
+- [x] `git push -u origin [branch-name]`
+    
+- [ ] `git checkout origin`
+    
+
+**Explanation/Notes:** The `-u` (or `--set-upstream`) flag tells Git to create the branch on the remote server (`origin`) and set up a tracking connection so future `git pull` or `git push` commands know where to go.
